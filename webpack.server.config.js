@@ -2,8 +2,10 @@ const path = require('path');
 
 module.exports = {
     contentBase: path.resolve(__dirname, "dist"),
+    publicPath: "/bundles/",
     host: 'localhost',
-    compress: true,
-    hot: true,  // just enable in dev mode, and need to remove in product mode.
     port: 8081
+    // compress: true,
+    // inline: true,
+    // hot: true,
   };

@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "0bf1061108818d0d1e1d";
+/******/ 	var hotCurrentHash = "11a3d909a33e97818e9e";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -812,7 +812,7 @@ eval("\n\nvar pug_has_own_property = Object.prototype.hasOwnProperty;\n\n/**\n *
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var template = __webpack_require__(/*! ./views/index.pug */ \"./src/views/index.pug\");\n\ndocument.write(template({\n  headline: 'Here\\'s Index.pug. Ready Go!'\n}));\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("var template = __webpack_require__(/*! ./views/index.pug */ \"./src/views/index.pug\");\n\ndocument.write(template({\n  headline: 'Here\\'s Index.pug. Ready Go! Hello Dude.'\n}));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -823,7 +823,7 @@ eval("var template = __webpack_require__(/*! ./views/index.pug */ \"./src/views/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (headline) {pug_html = pug_html + \"\\u003Cdiv class=\\\"container-fluid bg-light\\\"\\u003E\\u003Cdiv class=\\\"h3 p-5 text-warning\\\"\\u003EBootstrap ready!\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"h3 p-5 text-primary\\\"\\u003E\" + (pug.escape(null == (pug_interp = headline) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";}.call(this,\"headline\" in locals_for_with?locals_for_with.headline:typeof headline!==\"undefined\"?headline:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./src/views/index.pug?");
+eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (headline) {pug_html = pug_html + \"\\u003Cdiv class=\\\"container-fluid bg-light\\\"\\u003E\\u003Cdiv class=\\\"h3 p-5 text-warning\\\"\\u003EBootstrap ready!\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"h3 p-5 text-primary\\\"\\u003E\" + (pug.escape(null == (pug_interp = headline) ? \"\" : pug_interp)) + \"\\u003Cbutton class=\\\"btn btn-info\\\"\\u003Ehello button\\u003C\\u002Fbutton\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";}.call(this,\"headline\" in locals_for_with?locals_for_with.headline:typeof headline!==\"undefined\"?headline:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./src/views/index.pug?");
 
 /***/ }),
 

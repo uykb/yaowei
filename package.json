@@ -4,9 +4,9 @@
   "description": "Webpack small business website initial project ☀️",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "node dev.server.js",
-    "start:dev": "webpack-dev-server",
-    "start:open": "webpack-dev-server --open",
+    "start:node": "node dev.server.js",
+    "start": "webpack-dev-server --open",
+    "watch": "webpack --watch",
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
