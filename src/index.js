@@ -1,1 +1,3 @@
-document.write("hello bro,<br><h3>wp-site-biz/index</h3>")
+var template = require("./views/index.pug")
+
+document.write(template({headline: 'Here\'s Index.pug. Ready Go!'}))

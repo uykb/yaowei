@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-const devServer = require('./webpack.sever.config');
+const devServer = require('./webpack.server.config');
 
 /*
  * SplitChunksPlugin is enabled by default and replaced
@@ -63,9 +63,23 @@ module.exports = {
 						loader: 'css-loader'
 					}
 				]
+			},
+			{
+				test: /\.pug$/,
+
+				use: [
+					{
+						loader: 'pug-loader'
+					}
+				]
 			}
 		]
 	},
+
+	plugins: [
+		new webpack.NamedModulesPlugin(),
+		new webpack.HotModuleReplacementPlugin()		
+	],
 
 	entry: {
 		index: './src/index.js',
