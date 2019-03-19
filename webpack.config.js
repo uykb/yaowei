@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const devServer = require('./webpack.sever.config');
 
 /*
  * SplitChunksPlugin is enabled by default and replaced
@@ -30,6 +31,7 @@ module.exports = {
 			{
 				include: [path.resolve(__dirname, 'src')],
 				loader: 'babel-loader',
+				exclude: /node_modules/,
 
 				options: {
 					plugins: ['syntax-dynamic-import'],
@@ -74,11 +76,13 @@ module.exports = {
 	},
 
 	output: {
-		filename: '[name].[chunkhash].js',
-		path: path.resolve(__dirname, 'dist')
+		filename: '[name].bundle.js',
+		path: path.resolve(__dirname, 'dist/bundles')
 	},
 
 	mode: 'development',
+
+	devServer: devServer,
 
 	optimization: {
 		splitChunks: {

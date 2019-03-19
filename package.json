@@ -4,9 +4,12 @@
   "description": "Webpack small business website initial project ☀️",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "start:open": "webpack-dev-server --open",
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
+    "@babel/core": "^7.3.4",
     "anymatch": "^2.0.0",
     "asn1.js": "^4.10.1",
     "babel-loader": "^8.0.5",
@@ -89,8 +92,8 @@
     "object.getownpropertydescriptors": "^2.0.3",
     "os-browserify": "^0.3.0",
     "pako": "^1.0.10",
-    "parse-asn1": "^5.1.4",
     "parallel-transform": "^1.1.0",
+    "parse-asn1": "^5.1.4",
     "path-browserify": "^0.0.0",
     "path-dirname": "^1.0.2",
     "path-is-absolute": "^1.0.1",
@@ -130,10 +133,13 @@
     "style-loader": "^0.23.1",
     "terser": "^3.17.0",
     "uglifyjs-webpack-plugin": "^2.1.2",
-    "webpack-cli": "^3.3.0",
-    "webpack": "^4.29.6"
+    "webpack-cli": "^3.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.4",
+    "webpack": "^4.29.6",
+    "webpack-dev-server": "^3.2.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dyslab/wp-site-biz.git"

@@ -1,0 +1,1 @@
+document.write("hello bro,<br><h3>wp-site-biz/index</h3>")
