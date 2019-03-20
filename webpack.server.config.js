@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
     contentBase: path.resolve(__dirname, "dist"),
-    publicPath: "/bundles/",
+    publicPath: "/",
     host: 'localhost',
-    port: 8081
+    port: 8081,
     // compress: true,
-    // inline: true,
-    // hot: true,
-  };
+    inline: true,
+    hot: true
+};

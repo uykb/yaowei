@@ -1,3 +1,6 @@
-var template = require("./views/index.pug")
+const page = require('./jsons/index.json')
 
-document.write(template({headline: 'Here\'s Index.pug. Ready PUG!'}))
+for (index in page.parts) {
+    var template = require(`./views/${page.parts[index].widget}.pug`);
+    document.write(template({data: page.parts[index].data}));
+}
