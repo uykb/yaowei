@@ -1,0 +1,22 @@
+[
+    {
+        "title": "首页",
+        "link": "index"
+    },
+    {
+        "title": "解决方案",
+        "link": "solutions"
+    },
+    {
+        "title": "产品",
+        "link": "products"
+    },
+    {
+        "title": "企业新闻",
+        "link": "news"
+    },
+    {
+        "title": "联系我们",
+        "link": "about"
+    }
+]

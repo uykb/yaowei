@@ -1,6 +1,17 @@
-const page = require('./jsons/index.json')
+const menu = require('./jsons/topmenu.json')
+const footer = require('./jsons/footer.json')
+const content = require('./jsons/index.json')
 
-for (index in page.parts) {
-    var template = require(`./views/${page.parts[index].widget}.pug`);
-    document.write(template({data: page.parts[index].data}));
+// Top menu part
+var template = require(`./views/topmenu.pug`);
+document.write(template({menu: menu}));
+
+// Content part
+for (index in content) {
+    template = require(`./views/${content[index].widget}.pug`);
+    document.write(template({data: content[index].data}));
 }
+
+// Footer part
+template = require(`./views/footer.pug`);
+document.write(template({footer: footer}));

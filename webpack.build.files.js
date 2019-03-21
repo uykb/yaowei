@@ -4,9 +4,9 @@ const htmlfiles = {
     single: [
         {
             entrypoint_id: 'index',
-            template: 'template_base.pug',
+            template: 'template_index.pug',
             output: 'index.html',
-            title: '网站首页'
+            title: '☀️网站首页'
         },
         {
             entrypoint_id: 'about',

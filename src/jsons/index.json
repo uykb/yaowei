@@ -1,18 +1,16 @@
-{
-    "parts": [
+[
+    {
+        "widget": "headline",
+        "data": 
         {
-            "widget": "headline",
-            "data": 
-            {
-                "headline": "这是headline部分"
-            }
-        },
-        {
-            "widget": "headline2",
-            "data": 
-            {
-                "headline": "Hello, 这是headline2部分"
-            }
+            "headline": "这是headline部分"
         }
-    ]
-}
+    },
+    {
+        "widget": "headline2",
+        "data": 
+        {
+            "headline": "这是headline2部分"
+        }
+    }
+]

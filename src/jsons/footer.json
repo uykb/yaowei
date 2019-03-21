@@ -1,0 +1,52 @@
+{
+    "footersitelogo": "./imgs/favicon.png",
+    "footersitename": "企业测试网站",
+    "copyright": "Copyright © 2019 版权所有。",
+    "links": [
+        {
+            "title": "友情链接",
+            "href": ""
+        },
+        {
+            "title": "亚马逊",
+            "href": "#"
+        },
+        {
+            "title": "天猫淘宝",
+            "href": "#"
+        },
+        {
+            "title": "小米",
+            "href": "#"
+        },
+        {
+            "title": "华为",
+            "href": "#"
+        }
+    ],
+    "getintouchinfo": {
+        "headline": "联系方式",
+        "data": [
+            {
+                "faicon": "fab fa-facebook-f",
+                "href": "#",
+                "ref": "Facebook"
+            },
+            {
+                "faicon": "fab fa-qq",
+                "href": "#",
+                "ref": "QQ"
+            },
+            {
+                "faicon": "fab fa-weixin",
+                "href": "about.html",
+                "ref": "微信"
+            },
+            {
+                "faicon": "fas fa-envelope",
+                "href": "mailto:xxx@yyy.com",
+                "ref": "电子邮件"
+            }
+        ]
+    }
+}

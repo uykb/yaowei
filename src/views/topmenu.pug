@@ -1,0 +1,11 @@
+header.p-0
+div.container-fluid.p-0.custom-header-bgcolor
+    nav.navbar.navbar-expand-lg.navbar-light.p-2
+        div.container-fluid.d-flex.justify-content-end
+            button.navbar-toggler(type="button", data-toggle="collapse", data-target="#wbTopMenu", aria-controls="bs-navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            div.flex-row.collapse.justify-content-center.navbar-collapse(id="wbTopMenu")
+                ul.navbar-nav.top-menu
+                    each menuitem in menu
+                        li.nav-item.top-menu-item
+                            a.nav-link(href=menuitem.link + '.html') #{menuitem.title}
