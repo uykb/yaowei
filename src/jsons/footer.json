@@ -28,18 +28,18 @@
         "headline": "联系方式",
         "data": [
             {
-                "faicon": "fab fa-weibo",
+                "faicon": "socicon-facebook",
                 "href": "#",
                 "ref": "Facebook"
             },
             {
-                "faicon": "fab fa-qq",
-                "href": "#",
+                "faicon": "socicon-instagram",
+                "href": "/",
                 "ref": "QQ"
             },
             {
                 "faicon": "fab fa-weixin",
-                "href": "about.html",
+                "href": "all_widgets.html",
                 "ref": "微信"
             },
             {

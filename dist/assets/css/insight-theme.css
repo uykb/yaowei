@@ -6619,7 +6619,8 @@ h1, .h1, .display-3 {
     font-size: 3.5rem; } }
 
 .font-alt-1 {
-  font-family: 'Permanent Marker'; }
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Microsoft YaHei';
+}
 
 a {
   font-weight: 600; }
@@ -7052,6 +7053,7 @@ body.compensate-for-scrollbar {
 .fancybox-stage {
   direction: ltr;
   overflow: visible;
+  transform: translateZ(0);
   -webkit-transform: translateZ(0);
   z-index: 99994; }
 
@@ -7672,7 +7674,7 @@ https://flickity.metafizzy.co
 
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
-  tap-highlight-color: transparent;
+  /*tap-highlight-color: transparent;*/
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -8230,7 +8232,7 @@ article pre[class*='language-'] {
 [class^="socicon-"], [class*=" socicon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Socicon' !important;
-  speak: none;
+  /*speak: none;*/
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

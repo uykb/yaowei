@@ -8,21 +8,21 @@
                 "headline": "AA解决方案",
                 "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
                 "button_caption": "查看详情...",
-                "button_link": "all_widgets.html"
+                "button_link": "/index.html"
             },
             {
                 "bg_image": "./assets/imgs/header-2.jpg",
                 "headline": "BB解决方案",
                 "descript": "最全解决方案。<br>涵盖IT、制造、信息技术、互联网、航空、陆运、海运各行业客户。",
                 "button_caption": "Get Start Now...",
-                "button_link": "all_widgets.html"
+                "button_link": "/about.html"
             },
             {
                 "bg_image": "./assets/imgs/header-3.jpg",
                 "headline": "CC解决方案",
                 "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
                 "button_caption": "KNOW MORE...",
-                "button_link": "#"
+                "button_link": "/"
             }
         ] 
     },
@@ -34,7 +34,7 @@
             "headline": "AA解决方案",
             "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
             "button_caption": "查看详情...",
-            "button_link": "all_widgets.html"
+            "button_link": "/solutions"
         }
     },
     {
@@ -72,6 +72,56 @@
                     "caption": "服务方案",
                     "link": "https://insight.mediumra.re/blocks.html"
                 }
+            ]
+        }
+    },
+    {
+        "widget": "headline_04",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-3.jpg",
+            "headline": "AA Solution 解决方案",
+            "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情 More...",
+            "button_link": "/solutions"
+        }
+    },
+    {
+        "widget": "headline_05",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-5.jpg",
+            "headline": "ABC解决方案",
+            "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情 More...",
+            "button_link": "/"
+        }
+    },
+    {
+        "widget": "headline_06",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-1.jpg",
+            "headline": "CBA解决方案",
+            "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情 More...",
+            "button_link": "/"
+        }
+    },
+    {
+        "widget": "headline_07",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-1.jpg",
+            "headline": "ASA云存储方案",
+            "descript": "IT行业最全的解决方案。涵盖制造、信息技术、互联网、航空、陆运、海运各行各业客户。",
+            "button_caption": "查看详情 More...",
+            "button_link": "/",
+            "text_list": 
+            [
+                "30GB储存空间*",
+                "无限流量",
+                "年费仅90元<span class=\"h4\">起</span>"
             ]
         }
     }

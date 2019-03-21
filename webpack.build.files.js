@@ -13,6 +13,12 @@ const htmlfiles = {
             template: 'template_about.pug',
             output: 'about.html',
             title: '关于网站'
+        },
+        {
+            entrypoint_id: 'all_widgets',
+            template: 'template_all_widgets.pug',
+            output: 'all_widgets.html',
+            title: '网页小部件展示'
         }
     ],
     series: [
@@ -30,7 +36,7 @@ module.exports = {
     Entrypoints: function() {
         var epString = '';
 
-        for (index in htmlfiles.single) {
+        for (var index in htmlfiles.single) {
             epString += `"${htmlfiles.single[index].entrypoint_id}":"./src/${htmlfiles.single[index].entrypoint_id}.js",`;
         }
         if (epString !== '') {
@@ -43,7 +49,7 @@ module.exports = {
         var tempObj;
         var returnList = [];
 
-        for (index in htmlfiles.single) {
+        for (var index in htmlfiles.single) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
                   `${htmlfiles.single[index].entrypoint_id}`,
