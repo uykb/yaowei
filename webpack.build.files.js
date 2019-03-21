@@ -10,7 +10,7 @@ const htmlfiles = {
         },
         {
             entrypoint_id: 'about',
-            template: 'template_base.pug',
+            template: 'template_about.pug',
             output: 'about.html',
             title: '关于网站'
         }

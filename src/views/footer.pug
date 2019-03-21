@@ -1,30 +1,31 @@
 footer.p-0
   div.container-fluid.custom-footer-bgcolor.p-0.p-md-3
-    div.container.pt-5.pb-5
+    div.container.pt-3.pb-3
       div.d-flex.justify-content-between.row
         div.col-lg-4.col-12.order-12
           div.d-flex.justify-content-end.pr-3
-            span.list-social-links.custom-footer-color.custom-text-shadow-1px= footer.getintouchinfo.headline
+            span= footer.getintouchinfo.headline
           div
             ul.list-social-links.justify-content-end.pr-3
               each gitem in footer.getintouchinfo.data
                 li.text-white
                   a(href=gitem.href, target="_blank", rel=gitem.ref)
                     i(class=gitem.faicon)
-        div.col-md-8.col-12.custom-footer-color.order-1
-          nav.nav
+        div.col-md-8.col-12.order-1
+            ul.list-inline
             each linkitem in footer.links
-              if linkitem.href == ''
-                a.nav-link.custom-footer-link-style.disabled(href="#", tabindex="-1", aria-disabled="true")= linkitem.title
-              else
-                a.nav-link.custom-footer-link-style(href=linkitem.href)= linkitem.title
+                if linkitem.href == ''
+                    li.list-inline-item= linkitem.title
+                else
+                    li.list-inline-item
+                        a(href=linkitem.href)= linkitem.title
       div.d-flex.justify-content-center.pt-3
-        div.col-12.text-center.custom-footer-color
-          hr.bg-secondary
-          span
-            a.custom-footer-brand(href="/", alt=footer.footersitename)
-              img.d-inline-block.align-top(src=footer.footersitelogo, height="20", alt=footer.footersitename)
-              |  
-              span #{footer.footersitename}
-            |  
-          span!= footer.copyright
+        div.col-12.text-center
+            hr.bg-secondary
+            span
+                a(href="/", alt=footer.footersitename)
+                    img.d-inline-block.align-top(src=footer.footersitelogo, height="20", alt=footer.footersitename)
+                    |  
+                    span #{footer.footersitename}
+                    |  
+            span!= footer.copyright

@@ -1,16 +1,51 @@
 [
     {
-        "widget": "headline",
+        "widget": "headline_01",
         "data": 
         {
-            "headline": "这是headline部分"
+            "bg_image": "./assets/imgs/header-1.jpg",
+            "headline": "AA解决方案",
+            "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情...",
+            "button_link": "/solutions"
         }
     },
     {
-        "widget": "headline2",
+        "widget": "headline_02",
         "data": 
         {
-            "headline": "这是headline2部分"
+            "bg_image": "./assets/imgs/header-1.jpg",
+            "headline": "BB解决方案",
+            "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情...",
+            "button_link": "https://insight.mediumra.re/blocks.html"
+        }
+    },
+    {
+        "widget": "headline_03",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-2.jpg",
+            "headline": "CC产品大全",
+            "descript": "应用于各行各业的各种产品信息...",
+            "link_list":
+            [
+                {
+                    "icon": "./assets/imgs/icon-1.svg",
+                    "caption": "行业解决方案",
+                    "link": "https://insight.mediumra.re/pages-landing.html"
+                },
+                {
+                    "icon": "./assets/imgs/icon-2.svg",
+                    "caption": "客户解决方案",
+                    "link": "https://insight.mediumra.re/components-insight.html"
+                },
+                {
+                    "icon": "./assets/imgs/icon-3.svg",
+                    "caption": "服务方案",
+                    "link": "https://insight.mediumra.re/blocks.html"
+                }
+            ]
         }
     }
 ]

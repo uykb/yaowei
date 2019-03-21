@@ -1,7 +1,7 @@
 {
-    "footersitelogo": "./imgs/favicon.png",
+    "footersitelogo": "./assets/imgs/favicon.png",
     "footersitename": "企业测试网站",
-    "copyright": "Copyright © 2019 版权所有。",
+    "copyright": "Copyright © 2019 版权所有。Inspired and Powered by <a href=\"https://insight.mediumra.re/index.html\" target=\"_blank\">Insight-Theme</a>.",
     "links": [
         {
             "title": "友情链接",
@@ -28,7 +28,7 @@
         "headline": "联系方式",
         "data": [
             {
-                "faicon": "fab fa-facebook-f",
+                "faicon": "fab fa-weibo",
                 "href": "#",
                 "ref": "Facebook"
             },
