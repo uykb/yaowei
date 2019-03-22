@@ -6,6 +6,7 @@ section.bg-white.pb-0.pt-3
                     div.col-lg-5.mb-3.mb-sm-0
                         h1.display-4!= data.headline
                         p.lead!= data.descript
-                        a.btn.btn-lg.btn-success.text-white(href=data.button_link)!= data.button_caption
+                        if data.button_caption != ''
+                            a.btn.btn-lg.btn-success.text-white(href=data.button_link)!= data.button_caption
                     div.col-lg-7
                         img.pt-md-5.pt-lg-0(src=data.bg_image)

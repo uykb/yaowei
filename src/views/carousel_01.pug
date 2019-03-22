@@ -7,4 +7,5 @@ section.controls-inside.p-0.controls-light.bg-dark(data-flickity='{ "cellAlign":
                     div.col-12.col-md-6
                         h1.display-4.text-white!= ditem.headline
                         p.lead.text-white!= ditem.descript
-                        a.btn.btn-primary.btn-lg(href=ditem.button_link)!= ditem.button_caption   
+                        if data.button_caption != ''
+                            a.btn.btn-primary.btn-lg(href=ditem.button_link)!= ditem.button_caption   

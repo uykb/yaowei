@@ -13,4 +13,5 @@ section.header-3.p-0
                                     i.material-icons search
                             input.form-control(type="text", placeholder="搜索", aria-label="Search")
                         button.btn.btn-primary.btn-lg(type="submit")!= data.button_caption
-                    a.btn.btn-lg.btn-success.text-white(href=data.button_link)!= data.button_caption
+                    if data.button_caption != ''
+                        a.btn.btn-lg.btn-success.text-white(href=data.button_link)!= data.button_caption

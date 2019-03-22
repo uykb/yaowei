@@ -122,6 +122,40 @@
                 "30GB储存空间*",
                 "无限流量",
                 "年费仅90元<span class=\"h4\">起</span>"
+            ],
+            "note_list":
+            [
+                "* Terms &amp; Conditions apply. View our <a class=\"text-white\" href=\"#\" target_\"_blank\">Fair Use Policy</a>.",
+                "* 具体适用条款请参见 <a class=\"text-white\" href=\"#\" target_\"_blank\">优惠政策协议</a>。"
+            ]
+        }
+    },
+    {
+        "widget": "headline_08",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-4.jpg",
+            "headline": "CCNE解决方案",
+            "descript": "解决方案涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "",
+            "button_link": "about.html",
+            "bclist": 
+            [
+                {
+                    "link": "#1",
+                    "caption": "解决方案",
+                    "active": false
+                },
+                {
+                    "link": "#2",
+                    "caption": "航空客运",
+                    "active": false
+                },
+                {
+                    "link": "#3",
+                    "caption": "AES Solution",
+                    "active": true
+                }
             ]
         }
     }
