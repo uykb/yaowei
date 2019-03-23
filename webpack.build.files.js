@@ -6,7 +6,7 @@ const htmlfiles = {
             entrypoint_id: 'index',
             template: 'template_index.pug',
             output: 'index.html',
-            title: '☀️网站首页'
+            title: '网站首页'
         },
         {
             entrypoint_id: 'about',
@@ -18,7 +18,7 @@ const htmlfiles = {
             entrypoint_id: 'all_widgets',
             template: 'template_all_widgets.pug',
             output: 'all_widgets.html',
-            title: '网页小部件展示'
+            title: '☀️网页小部件展示☀️'
         }
     ],
     series: [

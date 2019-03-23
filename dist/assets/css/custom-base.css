@@ -87,7 +87,7 @@ For Header.
 }
 
 /*-----------------------------------------------------------------------------------------
-For Footer. list-social-links
+For Footer.
 -----------------------------------------------------------------------------------------*/
 .custom-footer-bgcolor {
     background-color: #0e0d3a;
@@ -102,4 +102,17 @@ footer a {
 footer a:hover {
     text-decoration: none;
     color: #dac71a; 
+}
+
+/*-----------------------------------------------------------------------------------------
+For linklist_02
+-----------------------------------------------------------------------------------------*/
+.custom-opacity-link img {
+    opacity: 0.45;
+    height: 4.75em;
+	text-align:center;
+}
+.custom-opacity-link img:hover {
+    opacity: 1;
+    height: 5.25em;
 }

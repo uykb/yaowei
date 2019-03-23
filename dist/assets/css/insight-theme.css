@@ -6893,19 +6893,6 @@ section {
   bottom: auto;
   top: 0; }
 
-a.back-to-top {
-  position: absolute;
-  right: 1.5rem;
-  opacity: 0;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  transform: translateY(30px); }
-  a.back-to-top.sticky-viewport-bottom {
-    bottom: 1.5rem;
-    z-index: 1060; }
-    a.back-to-top.sticky-viewport-bottom.position-fixed {
-      opacity: 1;
-      transform: translateY(0); }
-
 article + article {
   margin-top: 3rem; }
 

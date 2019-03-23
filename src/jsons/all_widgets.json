@@ -158,5 +158,215 @@
                 }
             ]
         }
+    },
+    {
+        "widget": "cardlist_01",
+        "data": 
+        [
+            {
+                "link": "/",
+                "image": "./assets/imgs/header-1.jpg",
+                "text": "解决方案"
+            },
+            {
+                "link": "/about",
+                "image": "./assets/imgs/header-2.jpg",
+                "text": "ABOUT US"
+            },
+            {
+                "link": "#",
+                "image": "./assets/imgs/header-3.jpg",
+                "text": "宇宙 Universe"
+            },
+            {
+                "link": "/about",
+                "image": "./assets/imgs/header-4.jpg",
+                "text": "中華文化"
+            }
+        ]
+    },
+    {
+        "widget": "cardlist_02",
+        "data": 
+        [
+            {
+                "link": "/",
+                "image": "./assets/imgs/icon-1.svg",
+                "text": "解决方案"
+            },
+            {
+                "link": "/about",
+                "image": "./assets/imgs/icon-2.svg",
+                "text": "ABOUT US"
+            },
+            {
+                "link": "#",
+                "image": "./assets/imgs/icon-3.svg",
+                "text": "宇宙 Universe"
+            },
+            {
+                "link": "/about",
+                "image": "./assets/imgs/icon-4.svg",
+                "text": "中華文化"
+            }
+        ]
+    },
+    {
+        "widget": "cardlist_03",
+        "data": 
+        [
+            {
+                "image": "./assets/imgs/header-2.jpg",
+                "title": "解决方案",
+                "text": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。",
+                "caption": "服务方案",
+                "link": "/"
+            },
+            {
+                "image": "./assets/imgs/header-3.jpg",
+                "title": "Solutions",
+                "text": "We offer the integrated IT Technology Solutions for whole industries.",
+                "caption": "Know More",
+                "link": "/"
+            },
+            {
+                "image": "./assets/imgs/header-5.jpg",
+                "title": "技术发展 History Eents",
+                "text": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。We offer the integrated IT Technology Solutions for whole industries.",
+                "caption": "服务 Service",
+                "link": "/"
+            }
+        ]
+    },
+    {
+        "widget": "cardlist_04",
+        "data": 
+        [
+            {
+                "image": "./assets/imgs/icon-3.svg",
+                "title": "解决方案",
+                "text": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。We offer the integrated IT Technology Solutions for whole industries.",
+                "caption": "服务方案",
+                "link": "/"
+            },
+            {
+                "image": "./assets/imgs/icon-4.svg",
+                "title": "Solutions",
+                "text": "We offer the integrated IT Technology Solutions for whole industries.涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。",
+                "caption": "Know More",
+                "link": "/"
+            },
+            {
+                "image": "./assets/imgs/icon-5.svg",
+                "title": "技术发展 History Eents",
+                "text": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。We offer the integrated IT Technology Solutions for whole industries.",
+                "caption": "服务 Service",
+                "link": "/"
+            }
+        ]
+    },
+    {
+        "widget": "cardlist_05",
+        "data": 
+        [
+            {
+                "title": "&#x1F44A; 3000万",
+                "text": "2019年产品销售突破",
+                "caption": "产品详情",
+                "link": "/"
+            },
+            {
+                "title": "&#x1F44C; 16行业",
+                "text": "应用行业涵盖",
+                "caption": "了解更多",
+                "link": "/"
+            },
+            {
+                "title": "&#x1F44B; 880+",
+                "text": "2019年申请专利数",
+                "caption": "成为合作伙伴",
+                "link": "/"
+            }
+        ]
+    },
+    {
+        "widget": "cardlist_06",
+        "data": 
+        [
+            {
+                "image": "./assets/imgs/header-1.jpg",
+                "title": "解决方案",
+                "text": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。We offer the integrated IT Technology Solutions for whole industries.",
+                "link": "/"
+            },
+            {
+                "image": "./assets/imgs/header-2.jpg",
+                "title": "Solutions",
+                "text": "We offer the integrated IT Technology Solutions for whole industries.涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。",
+                "link": "/"
+            },
+            {
+                "image": "./assets/imgs/header-3.jpg",
+                "title": "技术发展 History Eents",
+                "text": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。We offer the integrated IT Technology Solutions for whole industries.",
+                "link": "/"
+            }
+        ]
+    },
+    {
+        "widget": "linklist_01",
+        "data": 
+        [
+            {
+                "icon": "fab fa-weixin fa-3x",
+                "info": "微信公众号",
+                "moreinfo": "搜索：ABCFansGroup",
+                "link": "/"
+            },
+            {
+                "icon": "fab fa-weibo fa-3x",
+                "info": "微博大咖号",
+                "moreinfo": "搜索：ABCFansCode",
+                "link": "/"
+            },
+            {
+                "icon": "fab fa-qq fa-3x",
+                "info": "QQ粉丝群",
+                "moreinfo": "搜索：ABCFans",
+                "link": "/"
+            },
+            {
+                "icon": "fas fa-phone-square fa-3x",
+                "info": "拨打 400-123-1234",
+                "moreinfo": "服务时间：朝9点 至 晚5点",
+                "link": "/"
+            }
+        ]
+    },
+    {
+        "widget": "linklist_02",
+        "data": 
+        [
+            {
+                "image": "./assets/imgs/icon-5.svg",
+                "link": "#"
+            },
+            {
+                "image": "./assets/imgs/icon-4.svg",
+                "link": "#1"
+            },
+            {
+                "image": "./assets/imgs/icon-3.svg",
+                "link": "#2"
+            },
+            {
+                "image": "./assets/imgs/icon-2.svg",
+                "link": "#3"
+            },
+            {
+                "image": "./assets/imgs/icon-1.svg",
+                "link": "#page-top"
+            }
+        ]
     }
 ]
