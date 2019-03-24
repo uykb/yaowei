@@ -4,16 +4,16 @@ footer.p-0
       div.d-flex.justify-content-between.row
         div.col-lg-4.col-12.order-12
           div.d-flex.justify-content-end.pr-3
-            span= footer.getintouchinfo.headline
+            span= data.getintouchinfo.headline
           div
             ul.list-social-links.justify-content-end.pr-3
-              each gitem in footer.getintouchinfo.data
+              each gitem in data.getintouchinfo.data
                 li.text-white
                   a(href=gitem.href, target="_blank", rel=gitem.ref)
                     i(class=gitem.faicon)
         div.col-md-8.col-12.order-1
             ul.list-inline
-            each linkitem in footer.links
+            each linkitem in data.links
                 if linkitem.href == ''
                     li.list-inline-item= linkitem.title
                 else
@@ -23,9 +23,9 @@ footer.p-0
         div.col-12.text-center
             hr.bg-secondary
             span
-                a(href="/", alt=footer.footersitename)
-                    img.d-inline-block.align-top(src=footer.footersitelogo, height="20", alt=footer.footersitename)
+                a(href="/", alt=data.footersitename)
+                    img.d-inline-block.align-top(src=data.footersitelogo, height="20", alt=data.footersitename)
                     |  
-                    span #{footer.footersitename}
+                    span #{data.footersitename}
                     |  
-            span!= footer.copyright
+            span!= data.copyright

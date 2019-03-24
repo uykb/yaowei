@@ -1,5 +1,48 @@
 [
     {
+        "widget": "addtag",
+        "data": "tag-pagetop"
+    },
+    {
+        "widget": "topmenu",
+        "data": 
+        {
+            "addclass": "sticky-top",
+            "html": false,
+            "menu":
+            [
+                {
+                    "title": "HOME",
+                    "link": "/"
+                },
+                {
+                    "title": "Carousel",
+                    "link": "#tag-carousel"
+                },
+                {
+                    "title": "Headline",
+                    "link": "#tag-headline"
+                },
+                {
+                    "title": "Card List",
+                    "link": "#tag-cardlist"
+                },
+                {
+                    "title": "Link List",
+                    "link": "#tag-linklist"
+                },
+                {
+                    "title": "BACK TO TOP",
+                    "link": "#tag-pagetop"
+                }
+            ]
+        }
+    },
+    {
+        "widget": "addtag",
+        "data": "tag-carousel"
+    },
+    {
         "widget": "carousel_01",
         "data": 
         [
@@ -25,6 +68,10 @@
                 "button_link": "/"
             }
         ] 
+    },
+    {
+        "widget": "addtag",
+        "data": "tag-headline"
     },
     {
         "widget": "headline_01",
@@ -158,6 +205,10 @@
                 }
             ]
         }
+    },
+    {
+        "widget": "addtag",
+        "data": "tag-cardlist"
     },
     {
         "widget": "cardlist_01",
@@ -314,6 +365,10 @@
         ]
     },
     {
+        "widget": "addtag",
+        "data": "tag-linklist"
+    },
+    {
         "widget": "linklist_01",
         "data": 
         [
@@ -365,7 +420,7 @@
             },
             {
                 "image": "./assets/imgs/icon-1.svg",
-                "link": "#page-top"
+                "link": "#tag-pagetop"
             }
         ]
     }
