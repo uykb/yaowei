@@ -32,7 +32,19 @@
                     "link": "#tag-linklist"
                 },
                 {
-                    "title": "BACK TO TOP",
+                    "title": "Quote",
+                    "link": "#tag-quote"
+                },
+                {
+                    "title": "Price List",
+                    "link": "#tag-pricelist"
+                },
+                {
+                    "title": "Wizard/Features/Footer Demos",
+                    "link": "#tag-widgetdemos"
+                },
+                {
+                    "title": "TOP",
                     "link": "#tag-pagetop"
                 }
             ]
@@ -68,6 +80,60 @@
                 "button_link": "/"
             }
         ] 
+    },
+    {
+        "widget": "carousel_02",
+        "data": 
+        [
+            {
+                "bg_image": "./assets/imgs/wide-large-3.jpg",
+                "headline": "AA解决方案",
+                "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+                "button_caption": "查看详情...",
+                "button_link": "#AA"
+            },
+            {
+                "bg_image": "./assets/imgs/wide-large-2.jpg",
+                "headline": "BB解决方案",
+                "descript": "最全解决方案。<br>涵盖IT、制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+                "button_caption": "Get Start Now...",
+                "button_link": "#BB"
+            },
+            {
+                "bg_image": "./assets/imgs/wide-large-1.jpg",
+                "headline": "CC解决方案",
+                "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+                "button_caption": "KNOW MORE...",
+                "button_link": "#CC"
+            }
+        ] 
+    },
+    {
+        "widget": "carousel_03",
+        "data": 
+        [
+            {
+                "stars": 5,
+                "quote": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。Feel delighted on having it.",
+                "avatar": "./assets/imgs/avatar-1.jpg",
+                "name": "Abeter M Asan",
+                "career": "IT Manager"
+            },
+            {
+                "stars": 5,
+                "quote": "Feel delighted on having it. 涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。",
+                "avatar": "./assets/imgs/avatar-2.jpg",
+                "name": "Micheal Wilson",
+                "career": "Business Founder"
+            },
+            {
+                "stars": 5,
+                "quote": "很高兴选择这个好评如潮的行业客户解决方案。我们的企业因此得到了长足的发展，2019销售额预计突破10亿元大关。",
+                "avatar": "./assets/imgs/avatar-3.jpg",
+                "name": "张维佳",
+                "career": "总经理助理"
+            }
+        ]
     },
     {
         "widget": "addtag",
@@ -202,6 +268,42 @@
                     "link": "#3",
                     "caption": "AES Solution",
                     "active": true
+                }
+            ]
+        }
+    },
+    {
+        "widget": "headline_09",
+        "data": 
+        {
+            "headline": "质优价廉的FBA头程解决方案",
+            "descript": "航空、陆运、海运各行业客户首选头程套餐。",
+            "button_caption": "查看详情...",
+            "button_link": "#fba"
+        }
+    },
+    {
+        "widget": "headline_10",
+        "data": 
+        {
+            "headline": "没有谁<br>能比你自己<br>做得更好！",
+            "descript": "航空、陆运、海运各行业客户首选头程套餐。",
+            "button_list": 
+            [
+                {
+                    "caption": "查看详情",
+                    "link": "#knowmore",
+                    "class": "btn-primary"
+                },
+                {
+                    "caption": "索取案例",
+                    "link": "#request",
+                    "class": "btn-info"
+                },
+                {
+                    "caption": "一笑而过",
+                    "link": "#pass",
+                    "class": "btn-warning"
                 }
             ]
         }
@@ -423,5 +525,43 @@
                 "link": "#tag-pagetop"
             }
         ]
+    },
+    {
+        "widget": "addtag",
+        "data": "tag-quote"
+    },
+    {
+        "widget": "quote_01",
+        "data": 
+        {
+            "image": "./assets/imgs/header-2.jpg",
+            "stars": 5,
+            "quote": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。Feel delighted on having it.",
+            "name": "Abeter M Asan"
+        }
+    },
+    {
+        "widget": "quote_02",
+        "data": 
+        {
+            "image": "./assets/imgs/header-1.jpg",
+            "stars": 5,
+            "quote": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户的全面解决方案。Feel delighted on having it.",
+            "avatar": "./assets/imgs/avatar-1.jpg",
+            "name": "Abeter M Asan",
+            "career": "IT Manager"
+        }
+    },
+    {
+        "widget": "addtag",
+        "data": "tag-pricelist"
+    },
+    {
+        "widget": "addtag",
+        "data": "tag-widgetdemos"
+    },
+    {
+        "widget": "tabdemo",
+        "data": ""
     }
 ]
