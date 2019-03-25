@@ -40,7 +40,7 @@
                     "link": "#tag-pricelist"
                 },
                 {
-                    "title": "Wizard/Features/Footer Demos",
+                    "title": "Wizard/Table/Footer Demos",
                     "link": "#tag-widgetdemos"
                 },
                 {
@@ -557,11 +557,135 @@
         "data": "tag-pricelist"
     },
     {
+        "widget": "pricelist_01",
+        "data": 
+        [
+            {
+                "category": "个人用户",
+                "price": "￥99/年",
+                "promotion": "",
+                "descript": "价廉物美、享受全功能体验的个人客户选择。",
+                "button_caption": "点击订购",
+                "button_link": "#order99",
+                "feature_list": 
+                [
+                    "全程产品生产、设计、销售跟踪服务",
+                    "15天换新退款保证",
+                    "低价优选套餐"
+                ]
+            },
+            {
+                "category": "中小企业",
+                "price": "￥999/年",
+                "promotion": "性价比优选",
+                "descript": "企业雇员在50人以下的中小型企业首选方案。",
+                "button_caption": "点击订购",
+                "button_link": "#order999",
+                "feature_list": 
+                [
+                    "全程产品生产、设计、销售跟踪服务",
+                    "15天换新退款保证",
+                    "充值信用点积累（永久有效）"
+                ]
+            },
+            {
+                "category": "大型企业",
+                "price": "￥3999/年",
+                "promotion": "",
+                "descript": "企业雇员超过50人或以上的大型企业和行业用户首选全面解决方案。",
+                "button_caption": "点击订购",
+                "button_link": "#order3999",
+                "feature_list": 
+                [
+                    "全程产品生产、设计、销售跟踪服务",
+                    "30天换新退款保证",
+                    "双倍充值信用点积累（永久有效）"
+                ]
+            }
+    
+        ]
+    },
+    {
+        "widget": "pricelist_02",
+        "data": 
+        [
+            {
+                "category": "基础版",
+                "price": "￥9.9/月",
+                "promotion": "最具性价比",
+                "descript": "价廉物美的个人选择",
+                "button_caption": "点击订购",
+                "button_link": "#order9",
+                "feature_list": 
+                [
+                    "10用户权限",
+                    "15G空间",
+                    "低价优选套餐"
+                ],
+                "addition_note": "* 下单另外赠送10天免费试用期"
+            },
+            {
+                "category": "专业版",
+                "price": "￥39/月",
+                "promotion": "专业人员首选",
+                "descript": "50用户以下的首选方案",
+                "button_caption": "点击订购",
+                "button_link": "#order39",
+                "feature_list": 
+                [
+                    "50用户权限",
+                    "150G空间",
+                    "2X倍速传输服务"
+                ],
+                "addition_note": "* 下单另外赠送30天免费试用期"
+            },
+            {
+                "category": "至尊版",
+                "price": "￥99/月",
+                "promotion": "",
+                "descript": "专业用户全面解决方案",
+                "button_caption": "点击订购",
+                "button_link": "#order99",
+                "feature_list": 
+                [
+                    "无限用户权限",
+                    "无限空间",
+                    "4X倍速传输服务"
+                ],
+                "addition_note": "* 下单另外赠送60天免费试用期"
+            }
+    
+        ]
+    },
+    {
         "widget": "addtag",
         "data": "tag-widgetdemos"
     },
     {
-        "widget": "tabdemo",
+        "widget": "wizarddemo",
+        "data": ""
+    },
+    {
+        "widget": "tabledemo",
+        "data":
+        {
+            "header_cols": [0],
+            "header_rows": [0],
+            "focus_cols": [2],
+            "focus_rows": [2,4],
+            "table_data":
+            [
+                ["","免费用户","会员","超级会员","至尊会员"],
+                ["储存空间","1G","100G","888G","无限制"],
+                ["爬虫能力","标准","标准","标准PRO","标准PLUS"],
+                ["网络防御","100+","1000+","9999+","无限制"],
+                ["自动备份","<i class='material-icons text-success'>close</i>","<i class='material-icons text-success'>check</i>","<i class='material-icons text-success'>check</i>","<i class='material-icons text-success'>check</i>"],
+                ["附件功能","<i class='material-icons text-success'>close</i>","<i class='material-icons text-success'>close</i>","<i class='material-icons text-success'>check</i>","<i class='material-icons text-success'>check</i>"]
+            ]
+        }
+    },
+    {
+        "widget": "footerdemo",
         "data": ""
     }
 ]
