@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start:node": "node dev.server.js",
+    "start:win": "npx run node_modules/webpack-dev-server/bin/webpack-dev-server.js --open",
     "start": "webpack-dev-server --open",
     "watch": "webpack --watch",
     "build": "webpack --config webpack.config.js"
