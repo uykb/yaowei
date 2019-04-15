@@ -1,6 +1,6 @@
 const rulesConfig = require('./webpack.rules.config');
-const devServer = require('./webpack.server.config');
-const buildFiles = require('./webpack.build.files');
+const devServerConfig = require('./webpack.server.config');
+const buildFiles = require('./webpack.build.files.index');
 
 module.exports = {
 	module: {
@@ -13,12 +13,12 @@ module.exports = {
 
 	output: {
 		filename: './bundles/[name].bundle.js',
-        path: devServer.contentBase,
+        path: devServerConfig.devServer.contentBase,
 	},
 
 	mode: 'production',
 
-	devServer: devServer,
+	devServer: devServerConfig.devServer,
 
 	optimization: {
 		splitChunks: {

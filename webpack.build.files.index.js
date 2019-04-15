@@ -3,6 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const htmlfiles = {
     single: [
         {
+            entrypoint_id: 'news_list',
+            template: 'template_news_list.pug',
+            output: 'news_list.html',
+            title: '企业新闻'
+        },
+        {
             entrypoint_id: 'index',
             template: 'template_index.pug',
             output: 'index.html',
@@ -21,7 +27,7 @@ const htmlfiles = {
             title: '☀️网页小部件展示☀️'
         }
     ],
-    series: [
+    memo_for_news: [
         {
             entrypoints_ids: 'news_list.json',
             list_template: 'template_news_list.pug',
