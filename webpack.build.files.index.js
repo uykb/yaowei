@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const htmlfiles = {
-    single: [
+    index: [
         {
             entrypoint_id: 'news_list',
             template: 'template_news_list.pug',
@@ -27,14 +27,10 @@ const htmlfiles = {
             title: '☀️网页小部件展示☀️'
         }
     ],
-    memo_for_news: [
-        {
-            entrypoints_ids: 'news_list.json',
-            list_template: 'template_news_list.pug',
-            item_template: 'template_news_item.pug',
-            output_pattern: 'news_[id].html',	// [id] will be replaced by the specific content which was defined in json file.
-            title_pattern: '新闻标题：【[title]】'	// [title] will be replaced by the specific content which was defined in json file.
-        }
+    news: [
+        // output news file pattern: 'news_[id].html',
+        "news_20190401",
+        "news_20190400"
     ]
 }
 
@@ -42,8 +38,8 @@ module.exports = {
     Entrypoints: function() {
         var epString = '';
 
-        for (var index in htmlfiles.single) {
-            epString += `"${htmlfiles.single[index].entrypoint_id}":"./src/${htmlfiles.single[index].entrypoint_id}.js",`;
+        for (var id in htmlfiles.index) {
+            epString += `"${htmlfiles.index[id].entrypoint_id}":"./src/${htmlfiles.index[id].entrypoint_id}.js",`;
         }
         if (epString !== '') {
             epString = epString.slice(0, epString.length-1)
@@ -55,17 +51,17 @@ module.exports = {
         var tempObj;
         var returnList = [];
 
-        for (var index in htmlfiles.single) {
+        for (var id in htmlfiles.index) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                  `${htmlfiles.single[index].entrypoint_id}`,
+                  `${htmlfiles.index[id].entrypoint_id}`,
                 ],
                 favicon: './src/favicon.ico',
-                filename: htmlfiles.single[index].output,
+                filename: htmlfiles.index[id].output,
                 inject: 'body',
                 minify: true,
-                template: `./src/views/${htmlfiles.single[index].template}`,
-                title: htmlfiles.single[index].title
+                template: `./src/views/${htmlfiles.index[id].template}`,
+                title: htmlfiles.index[id].title
             });
             returnList.push(tempObj);
         }

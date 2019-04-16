@@ -29,14 +29,8 @@
         {
             "newsperpage": 30,
             "newslist": [
-                {
-                    "newsid": "news_20190401",
-                    "generateflag": true
-                },
-                {
-                    "newsid": "news_20190400",
-                    "generateflag": false
-                }
+                "news_20190401",
+                "news_20190400"
             ]
         }
     }
