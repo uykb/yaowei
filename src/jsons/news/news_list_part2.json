@@ -1,0 +1,12 @@
+{
+    "widget": "news/news_list_part2",
+    "data": 
+    {
+        "image": "./assets/imgs/news/news_list_side.svg",
+        "newsperpage": 30,
+        "newslist": [
+            "news_20190401",
+            "news_20190400"
+        ]
+    }
+}

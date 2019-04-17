@@ -1,20 +1,23 @@
 const topmenu = require('./jsons/topmenu.json')
 const footer = require('./jsons/footer.json')
-const content = require('./jsons/news_list.json')
 
 // Top menu part
-var template = require(`./views/topmenu.pug`);
+let template = require(`./views/topmenu.pug`);
 document.write(template({data: topmenu}));
 
 // Content part
-for (var index in content) {
-    template = require(`./views/${content[index].widget}.pug`);
-    if (content[index].data.newslist !== null) {
-        // eslint-disable-next-line no-console
-        console.log(index);
-    }
-    document.write(template({data: content[index].data}));
+// Part1
+let part = require('./jsons/news/news_list_part1.json');
+template = require(`./views/${part.widget}.pug`);
+document.write(template({data: part.data}));
+// Part2
+part = require('./jsons/news/news_list_part2.json');
+part.data.newslist_content = [];
+for (let id in part.data.newslist) {
+    part.data.newslist_content.push(require(`./jsons/news/${part.data.newslist[id]}.json`));
 }
+template = require(`./views/${part.widget}.pug`);
+document.write(template({data: part.data}));
 
 // Footer part
 template = require(`./views/footer.pug`);

@@ -1,0 +1,24 @@
+{
+    "widget": "news/news_list_part1",
+    "data": 
+    {
+        "bg_image": "./assets/imgs/news/news_list_bg.jpg",
+        "headline": "企业新闻",
+        "descript": "资讯连接你我，让彼此联系更为紧密。",
+        "button_caption": "",
+        "button_link": "about.html",
+        "bclist": 
+        [
+            {
+                "link": "/",
+                "caption": "首页",
+                "active": false
+            },
+            {
+                "link": "",
+                "caption": "企业新闻",
+                "active": true
+            }
+        ]
+    }
+}

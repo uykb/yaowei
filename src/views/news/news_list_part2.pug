@@ -1,7 +1,16 @@
-section.bg-white
-    div.container.height-md-30
+section.bg-light
+    div.container.height-md-20
         div.row
-            p= data.newsperpage
-            div.col-md-8.col-lg-7.col-xl-6
-                for nlitem in data.newslist
-                    p= nlitem
+            div.col-md-3.col-lg-4
+                img.d-none.d-md-block(src=data.image)
+            div.col-md-9.col-lg-8
+                for newsitem, index in data.newslist_content
+                    div
+                        p
+                            a.h4(href=`news/${data.newslist[index]}.html`)= newsitem.title
+                        p
+                            div.d-flex.justify-content-start.align-items-center
+                                i.material-icons.text-secondary art_track
+                                span.text-secondary.custom-indent-half= newsitem.datetime
+                        p.text-secondary= newsitem.preface
+                    hr
