@@ -38,9 +38,13 @@ module.exports = {
     Entrypoints: function() {
         var epString = '';
 
+        // ep for htmlfiles.index
         for (var id in htmlfiles.index) {
             epString += `"${htmlfiles.index[id].entrypoint_id}":"./src/${htmlfiles.index[id].entrypoint_id}.js",`;
         }
+        // ep for htmlfiles.news
+        // do something here...
+
         if (epString !== '') {
             epString = epString.slice(0, epString.length-1)
         }
@@ -51,6 +55,7 @@ module.exports = {
         var tempObj;
         var returnList = [];
 
+        // HtmlWebpackPlugin for htmlfiles.index
         for (var id in htmlfiles.index) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
@@ -65,6 +70,8 @@ module.exports = {
             });
             returnList.push(tempObj);
         }
+        // HtmlWebpackPlugin for htmlfiles.news
+        // do something here...
 
         return returnList
     }

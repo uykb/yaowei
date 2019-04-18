@@ -1,10 +1,10 @@
 {
-    "widget": "news/news_list_part1",
+    "widget": "news/news_id_part1",
     "data": 
     {
-        "bg_image": "./assets/imgs/news/news_list_bg.jpg",
-        "headline": "企业新闻",
-        "descript": "资讯连接你我，让彼此联系更为紧密。",
+        "bg_image": "./assets/imgs/news/news_id_bg.jpg",
+        "headline": "",
+        "descript": "",
         "button_caption": "",
         "button_link": "",
         "bclist": 
@@ -17,6 +17,11 @@
             {
                 "link": "/news_list.html",
                 "caption": "企业新闻",
+                "active": false
+            },
+            {
+                "link": "/news_[id].html",
+                "caption": "[title]",
                 "active": true
             }
         ]

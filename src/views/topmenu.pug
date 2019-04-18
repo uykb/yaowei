@@ -8,6 +8,6 @@ div(class=`container-fluid p-0 custom-header-bgcolor ${data.addclass}`)
                     each menuitem in data.menu
                         li.nav-item.top-menu-item
                             if data.html
-                                a.nav-link(href=menuitem.link + '.html') #{menuitem.title}
+                                a.nav-link(href=`${menuitem.link}.html`) #{menuitem.title}
                             else
                                 a.nav-link(href=menuitem.link) #{menuitem.title}
