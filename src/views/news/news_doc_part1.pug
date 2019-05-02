@@ -7,11 +7,11 @@ section.bg-white
                     ol.breadcrumb.p-0.bg-transparent
                         for bcitem in data.bclist
                             if bcitem.active
-                                li.breadcrumb-item.active.text-light(aria-current="page")= bcitem.caption
+                                li.breadcrumb-item.active.text-dark(aria-current="page")= bcitem.caption
                             else
                                 li.breadcrumb-item
-                                    a.text-light(href=bcitem.link)= bcitem.caption
-                h1.display-4.text-white!= data.headline
-                p.lead.mb-0.text-light!= data.descript
+                                    a.text-dark(href=bcitem.link)= bcitem.caption
+                h1.display-4.text-black!= data.headline
+                p.lead.mb-0.text-dark!= data.descript
                 if data.button_caption != ''
                     a.btn.btn-lg.btn-warning(href=data.button_link)!= data.button_caption

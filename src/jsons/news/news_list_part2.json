@@ -3,8 +3,9 @@
     "data": 
     {
         "image": "./assets/imgs/news/news_list_side.svg",
-        "newsperpage": 30,
+        "newsperpage": 5,
         "newslist": [
+            "news_20190500",
             "news_20190401",
             "news_20190400"
         ]
