@@ -14,3 +14,9 @@ section.bg-light
                                 span.text-secondary.custom-indent-half= newsitem.datetime
                         p.text-secondary= newsitem.preface
                     hr
+                -
+                    // Calculate the max page for pagination bar.
+                    var max_page = parseInt((data.newslist.length - 1) / data.newsperpage) + 1
+                div.col-md-9.col-lg-8
+                    p= data.current_page
+                    p= max_page
