@@ -1,0 +1,63 @@
+[
+    {
+        "widget": "solutions/solution_space",
+        "data": 
+        {
+            "class": "pt-4 pb-5"
+        }
+    },
+    {
+        "widget": "solutions/solution_list_part2",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-1.jpg",
+            "headline": "网络构建解决方案",
+            "descript": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户，涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情 More...",
+            "button_link": "solution_A201905.html"
+        }
+    },
+    {
+        "widget": "solutions/solution_space",
+        "data": 
+        {
+            "class": "bg-light pt-4 pb-5"
+        }
+    },
+    {
+        "widget": "solutions/solution_list_part3",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-2.jpg",
+            "headline": "信息安全解决方案",
+            "descript": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户，涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情 More...",
+            "button_link": "solution_B201901.html"
+        }
+    },
+    {
+        "widget": "solutions/solution_space",
+        "data": 
+        {
+            "class": "pt-4 pb-5"
+        }
+    },
+    {
+        "widget": "solutions/solution_list_part2",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-3.jpg",
+            "headline": "数据维护解决方案",
+            "descript": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户，涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情 More...",
+            "button_link": "solution_C201904.html"
+        }
+    },
+    {
+        "widget": "solutions/solution_space",
+        "data": 
+        {
+            "class": "pt-4 pb-5"
+        }
+    }
+]

@@ -1,0 +1,24 @@
+{
+    "widget": "solutions/solution_list_part1",
+    "data": 
+    {
+        "bg_image": "./assets/imgs/solutions/solution_list_bg.jpg",
+        "headline": "解决方案",
+        "descript": "为通信行业精心设计、追求卓越的企业应用解决方案。",
+        "button_caption": "",
+        "button_link": "",
+        "bclist": 
+        [
+            {
+                "link": "/",
+                "caption": "首页",
+                "active": false
+            },
+            {
+                "link": "/solution_list.html",
+                "caption": "解决方案",
+                "active": true
+            }
+        ]
+    }
+}

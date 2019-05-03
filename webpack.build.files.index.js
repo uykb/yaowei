@@ -22,37 +22,44 @@ const htmlfiles = {
             title: '☀️网页小部件展示☀️'
         }
     ],
-    news_list: [
-        'news_list_1',
-        'news_list_2',
-        'news_list_3'
-    ],
+    news_list_page_count: 3,    // the amount pages of news list.
     news: [
         // output news document file pattern: 'news_[id].html',
         "news_20190500", // the 1st item correspond to the template file 'new_doc_1.js',
         "news_20190401", // the 2nd item correspond to the template file 'new_doc_2.js',
         "news_20190400" // the 3rd item correspond to the template file 'new_doc_3.js', etc.
+    ],
+    solition_list: [
+        {
+            entrypoint_id: 'solution_list',
+            template: './src/views/template_solution_list.pug',
+            output: 'solution_list.html',
+            title: '解决方案'
+        }
     ]
 }
 
 module.exports = {
     Entrypoints: function() {
         var epString = '';
-        var fileid = 0;
 
         // ep for htmlfiles.index
         for (var id in htmlfiles.index) {
             epString += `"${htmlfiles.index[id].entrypoint_id}":"./src/${htmlfiles.index[id].entrypoint_id}.js",`;
         }
         // ep for htmlfiles.news_list
-        for (id in htmlfiles.news_list) {
-            fileid = parseInt(id) + 1;
-            epString += `"news_list_${fileid}":"./src/news/news_list_${fileid}.js",`;
+        for (id = 1; id <= htmlfiles.news_list_page_count; id++) {
+            epString += `"news_list_${id}":"./src/news/news_list_${id}.js",`;
         }
         // ep for htmlfiles.news
+        var fid = 0;
         for (id in htmlfiles.news) {
-            fileid = parseInt(id) + 1;
-            epString += `"${htmlfiles.news[id]}":"./src/news/news_doc_${fileid}.js",`;
+            fid = parseInt(id) + 1;
+            epString += `"${htmlfiles.news[id]}":"./src/news/news_doc_${fid}.js",`;
+        }
+        // ep for htmlfiles.solution_list
+        for (id in htmlfiles.solition_list) {
+            epString += `"${htmlfiles.solition_list[id].entrypoint_id}":"./src/solutions/${htmlfiles.solition_list[id].entrypoint_id}.js",`;
         }
 
         if (epString !== '') {
@@ -64,7 +71,6 @@ module.exports = {
     Plugins: function() {
         var tempObj;
         var returnList = [];
-        var fileid = 0;
 
         // HtmlWebpackPlugin for htmlfiles.index
         for (var id in htmlfiles.index) {
@@ -82,25 +88,23 @@ module.exports = {
             returnList.push(tempObj);
         }
         // HtmlWebpackPlugin for htmlfiles.news_list
-        for (id in htmlfiles.news_list) {
-            fileid = parseInt(id) + 1;
+        for (id = 1; id <= htmlfiles.news_list_page_count; id++) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                  `news_list_${fileid}`,
+                  `news_list_${id}`,
                 ],
                 favicon: './src/favicon.ico',
-                filename: `news_list_${fileid}.html`,
+                filename: `news_list_${id}.html`,
                 inject: 'body',
                 minify: true,
                 template: './src/views/template_news_list.pug',
-                title: `企业新闻 - 列表 - 第${fileid}页`
+                title: `企业新闻 - 列表 - 第${id}页`
             });
             returnList.push(tempObj);
         }
         // HtmlWebpackPlugin for htmlfiles.news
         let content = '';
         for (id in htmlfiles.news) {
-            fileid = parseInt(id) + 1;
             content = require(`./src/jsons/news/${htmlfiles.news[id]}.json`);
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
@@ -112,6 +116,21 @@ module.exports = {
                 minify: true,
                 template: './src/views/template_news_doc.pug',
                 title: `企业新闻 - ${content.title}`
+            });
+            returnList.push(tempObj);
+        }
+        // HtmlWebpackPlugin for htmlfiles.index
+        for (id in htmlfiles.solition_list) {
+            tempObj = new HtmlWebpackPlugin({
+                chunks: [
+                  `${htmlfiles.solition_list[id].entrypoint_id}`,
+                ],
+                favicon: './src/favicon.ico',
+                filename: htmlfiles.solition_list[id].output,
+                inject: 'body',
+                minify: true,
+                template: htmlfiles.solition_list[id].template,
+                title: htmlfiles.solition_list[id].title
             });
             returnList.push(tempObj);
         }
