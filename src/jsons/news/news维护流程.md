@@ -8,7 +8,7 @@
 修改**webpack.build.files.index.js文件**中的**htmlfiles.news**数组，该数组长度为本次需要新生成的文件数量，按需新增或修改为本次需要新生成的新闻内容文件（添加或修改文件代码名称newsid即可）。
 
 ### 第4步，维护新闻内容HTML页面内容JS文件。
-对应**webpack.build.files.index.js文件**中的**htmlfiles.news**的数组元素个数，修改**src/news/目录**中相应的**news_doc_[n].js文件**（n对应htmlfiles.news的数组元素依次为1，2，3...，本次要生成几个新闻内容的HTML文件，即修改几个相对应的JS文件）。
+对应**webpack.build.files.index.js文件**中的**htmlfiles.news**的数组元素，修改**src/news/目录**中相应的**[newsid].js文件**。
 
 ### 第5步，生成HTML文件。
 完成以上4步后，在命令行中输入

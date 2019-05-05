@@ -25,16 +25,24 @@ const htmlfiles = {
     news_list_page_count: 3,    // the amount pages of news list.
     news: [
         // output news document file pattern: 'news_[id].html',
-        "news_20190500", // the 1st item correspond to the template file 'new_doc_1.js',
-        "news_20190401", // the 2nd item correspond to the template file 'new_doc_2.js',
-        "news_20190400" // the 3rd item correspond to the template file 'new_doc_3.js', etc.
+        // the item correspond to the same filename js and json file.
+        "news_20190501",
+        "news_20190500",
+        "news_20190401",
+        "news_20190400"
     ],
-    solition_list: [
+    solutions: [
         {
             entrypoint_id: 'solution_list',
-            template: './src/views/template_solution_list.pug',
+            template: './src/views/template_solution.pug',
             output: 'solution_list.html',
             title: '解决方案'
+        },
+        {
+            entrypoint_id: 'solution_A201905',
+            template: './src/views/template_solution.pug',
+            output: 'solution_A201905.html',
+            title: 'A201905解决方案'
         }
     ]
 }
@@ -52,14 +60,12 @@ module.exports = {
             epString += `"news_list_${id}":"./src/news/news_list_${id}.js",`;
         }
         // ep for htmlfiles.news
-        var fid = 0;
         for (id in htmlfiles.news) {
-            fid = parseInt(id) + 1;
-            epString += `"${htmlfiles.news[id]}":"./src/news/news_doc_${fid}.js",`;
+            epString += `"${htmlfiles.news[id]}":"./src/news/${htmlfiles.news[id]}.js",`;
         }
-        // ep for htmlfiles.solution_list
-        for (id in htmlfiles.solition_list) {
-            epString += `"${htmlfiles.solition_list[id].entrypoint_id}":"./src/solutions/${htmlfiles.solition_list[id].entrypoint_id}.js",`;
+        // ep for htmlfiles.solutions
+        for (id in htmlfiles.solutions) {
+            epString += `"${htmlfiles.solutions[id].entrypoint_id}":"./src/solutions/${htmlfiles.solutions[id].entrypoint_id}.js",`;
         }
 
         if (epString !== '') {
@@ -97,7 +103,7 @@ module.exports = {
                 filename: `news_list_${id}.html`,
                 inject: 'body',
                 minify: true,
-                template: './src/views/template_news_list.pug',
+                template: './src/views/template_news.pug',
                 title: `企业新闻 - 列表 - 第${id}页`
             });
             returnList.push(tempObj);
@@ -114,23 +120,23 @@ module.exports = {
                 filename: `${htmlfiles.news[id]}.html`,
                 inject: 'body',
                 minify: true,
-                template: './src/views/template_news_doc.pug',
+                template: './src/views/template_news.pug',
                 title: `企业新闻 - ${content.title}`
             });
             returnList.push(tempObj);
         }
-        // HtmlWebpackPlugin for htmlfiles.index
-        for (id in htmlfiles.solition_list) {
+        // HtmlWebpackPlugin for htmlfiles.solutions
+        for (id in htmlfiles.solutions) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                  `${htmlfiles.solition_list[id].entrypoint_id}`,
+                  `${htmlfiles.solutions[id].entrypoint_id}`,
                 ],
                 favicon: './src/favicon.ico',
-                filename: htmlfiles.solition_list[id].output,
+                filename: htmlfiles.solutions[id].output,
                 inject: 'body',
                 minify: true,
-                template: htmlfiles.solition_list[id].template,
-                title: htmlfiles.solition_list[id].title
+                template: htmlfiles.solutions[id].template,
+                title: htmlfiles.solutions[id].title
             });
             returnList.push(tempObj);
         }

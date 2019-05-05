@@ -1,0 +1,49 @@
+[
+    {
+        "widget": "solutions/solution_doc_part1",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/solutions/solution_doc_bg.jpg",
+            "headline": "A201905网络构建解决方案",
+            "descript": "为行业精心设计、追求卓越的企业应用解决方案。",
+            "bclist": 
+            [
+                {
+                    "link": "/",
+                    "caption": "首页",
+                    "active": false
+                },
+                {
+                    "link": "/solution_list.html",
+                    "caption": "解决方案",
+                    "active": false
+                }
+            ]
+        }
+    },
+    {
+        "widget": "solutions/solution_space",
+        "data": 
+        {
+            "class": "pt-4 pb-5"
+        }
+    },
+    {
+        "widget": "solutions/solution_list_part2",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-5.jpg",
+            "headline": "网络构建解决方案",
+            "descript": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户，涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情 More...",
+            "button_link": "solution_AAA.html"
+        }
+    },
+    {
+        "widget": "solutions/solution_space",
+        "data": 
+        {
+            "class": "pt-4 pb-5"
+        }
+    }
+]
