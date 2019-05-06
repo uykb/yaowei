@@ -1,0 +1,55 @@
+section.bg-light
+    div.container.height-md-20
+        div.row
+            div.col-md-3.col-lg-4
+                img.d-none.d-md-block(src=data.image)
+            div.col-md-9.col-lg-8
+                -
+                    var this_page = data.current_page
+                    var prev_page = this_page - 1
+                    var next_page = this_page + 1
+                    var start_pos = prev_page * data.newsperpage
+                    var end_pos = this_page * data.newsperpage - 1
+                    if (end_pos > data.newslist.length - 1) {
+                        end_pos = data.newslist.length - 1
+                    }
+                    var id = start_pos
+                while id <= end_pos
+                    div
+                        p
+                            a.h4(href=`${data.newslist[id]}.html`)= data.newslist_content[id].title
+                        p
+                            div.d-flex.justify-content-start.align-items-center
+                                i.material-icons.text-secondary art_track
+                                span.text-secondary.custom-indent-half= data.newslist_content[id].datetime
+                        p.text-secondary= data.newslist_content[id].preface
+                    hr
+                    - id++
+                -
+                    // Calculate the max page for pagination bar.
+                    var max_page = parseInt((data.newslist.length - 1) / data.newsperpage) + 1
+                    //- This number 5 is the available max number of the news list page.
+                    //- It equal to the value of 'htmlfiles.news_list_page_count' in file 'webpack.build.files.index.js'.
+                    if (max_page > 5) {
+                        max_page = 5
+                    }
+                if max_page > 1
+                    div.row.justify-content-center.mt-3
+                        div.col-md-auto
+                            nav(aria-label="Page navigation bar")
+                                ul.pagination
+                                    if this_page > 1
+                                        li.page-item
+                                            a.page-link(href=`news_list_${prev_page}.html`) 上一页
+                                    - id = 1
+                                    while id <= max_page
+                                        if id == this_page
+                                            li.page-item.active
+                                                a.page-link(href=`news_list_${id}.html`)= id
+                                        else
+                                            li.page-item
+                                                a.page-link(href=`news_list_${id}.html`)= id
+                                        - id++
+                                    if this_page < max_page
+                                        li.page-item
+                                            a.page-link(href=`news_list_${next_page}.html`) 下一页

@@ -22,10 +22,11 @@ const htmlfiles = {
             title: '☀️网页小部件展示☀️'
         }
     ],
-    news_list_page_count: 3,    // the amount pages of news list.
+    news_list_page_count: 5,    // the amount pages of news list.
     news: [
         // output news document file pattern: 'news_[id].html',
         // the item correspond to the same filename js and json file.
+        "news_20190503",
         "news_20190502",
         "news_20190501",
         "news_20190500",

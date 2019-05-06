@@ -3,7 +3,7 @@ const footer = require('../jsons/footer.json')
 
 // Indicate the current page no.
 // The only one parameter which need to be changed in the files 'news_list_nn.js".
-const PAGE_ID = 'news_20190500';
+const PAGE_ID = 'news_20190503';
 let content = require(`../jsons/news/${PAGE_ID}.json`);
 
 // Top menu part

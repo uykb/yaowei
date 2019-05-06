@@ -1,5 +1,29 @@
 [
     {
+        "widget": "solutions/solution_title_light_text",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/solutions/solution_list_bg.jpg",
+            "headline": "解决方案",
+            "descript": "为通信行业精心设计、追求卓越的企业应用解决方案。",
+            "button_caption": "",
+            "button_link": "",
+            "bclist": 
+            [
+                {
+                    "link": "/",
+                    "caption": "首页",
+                    "active": false
+                },
+                {
+                    "link": "/solution_list.html",
+                    "caption": "解决方案",
+                    "active": true
+                }
+            ]
+        }
+    },
+    {
         "widget": "solutions/solution_space",
         "data": 
         {
@@ -7,7 +31,7 @@
         }
     },
     {
-        "widget": "solutions/solution_list_part2",
+        "widget": "solutions/solution_image_left",
         "data": 
         {
             "bg_image": "./assets/imgs/header-1.jpg",
@@ -25,7 +49,7 @@
         }
     },
     {
-        "widget": "solutions/solution_list_part3",
+        "widget": "solutions/solution_image_right",
         "data": 
         {
             "bg_image": "./assets/imgs/header-2.jpg",
@@ -43,7 +67,7 @@
         }
     },
     {
-        "widget": "solutions/solution_list_part2",
+        "widget": "solutions/solution_image_left",
         "data": 
         {
             "bg_image": "./assets/imgs/header-3.jpg",

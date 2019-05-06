@@ -10,19 +10,18 @@ let template = require(`../views/topmenu.pug`);
 document.write(template({data: topmenu}));
 
 // Content part
-// Part1
-let part = require('../jsons/news/news_list_part1.json');
-template = require(`../views/${part.widget}.pug`);
-document.write(template({data: part.data}));
-// Part2, The news list part.
-part = require('../jsons/news/news_list_part2.json');
-part.data.newslist_content = [];
-for (let id in part.data.newslist) {
-    part.data.newslist_content.push(require(`../jsons/news/${part.data.newslist[id]}.json`));
+let part = require('../jsons/news/news_list.json');
+for (let id in part) {
+    if (part[id].data.newslist !== undefined) {
+        part[id].data.newslist_content = [];
+        for (let newsid in part[id].data.newslist) {
+            part[id].data.newslist_content.push(require(`../jsons/news/${part[id].data.newslist[newsid]}.json`));
+        }
+        part[id].data.current_page = CURRENT_PAGE;
+    }
+    template = require(`../views/${part[id].widget}.pug`);
+    document.write(template({data: part[id].data}));
 }
-part.data.current_page = CURRENT_PAGE;
-template = require(`../views/${part.widget}.pug`);
-document.write(template({data: part.data}));
 
 // Footer part
 template = require(`../views/footer.pug`);

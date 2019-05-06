@@ -3,7 +3,7 @@ const footer = require('../jsons/footer.json')
 
 // Indicate the current page no.
 // The only one parameter which need to be changed in the files 'news_list_nn.js".
-const CURRENT_PAGE = 2;
+const CURRENT_PAGE = 5;
 
 // Top menu part
 let template = require(`../views/topmenu.pug`);

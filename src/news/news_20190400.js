@@ -12,7 +12,7 @@ document.write(template({data: topmenu}));
 
 // Content part
 // Part1
-let part = require('../jsons/news/news_doc_part1.json');
+let part = require('../jsons/news/news_doc_title.json');
 template = require(`../views/${part.widget}.pug`);
 document.write(template({data: part.data}));
 // Part2, The news list part.
