@@ -1,6 +1,17 @@
 [
     {
-        "widget": "headline_03",
+        "widget": "widgets/headline_01",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/header-2.jpg",
+            "headline": "关于解决方案",
+            "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
+            "button_caption": "查看详情...",
+            "button_link": "/solutions"
+        }
+    },
+    {
+        "widget": "widgets/headline_03",
         "data": 
         {
             "bg_image": "./assets/imgs/header-1.jpg",
@@ -24,17 +35,6 @@
                     "link": "https://themes.getbootstrap.com/preview/?theme_id=8258"
                 }
             ]
-        }
-    },
-    {
-        "widget": "headline_01",
-        "data": 
-        {
-            "bg_image": "./assets/imgs/header-2.jpg",
-            "headline": "关于解决方案",
-            "descript": "IT行业最全的解决方案。<br>涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
-            "button_caption": "查看详情...",
-            "button_link": "/solutions"
         }
     }
 ]

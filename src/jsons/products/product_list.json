@@ -1,0 +1,97 @@
+[
+    {
+        "widget": "products/product_title_light_text",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/products/product_list_bg.jpg",
+            "headline": "产品中心",
+            "descript": "专注解决情报数据分析及案件数据分析问题，让数据智能真正为客户带来价值。",
+            "bclist": 
+            [
+                {
+                    "link": "/",
+                    "caption": "首页",
+                    "active": false
+                },
+                {
+                    "link": "/product_list.html",
+                    "caption": "产品中心",
+                    "active": true
+                }
+            ]
+        }
+    },
+    {
+        "widget": "products/product_space",
+        "data": 
+        {
+            "class": "pt-4 pb-4"
+        }
+    },
+    {
+        "widget": "products/product_category_title",
+        "data":
+        {
+            "title": "路由器网关"
+        }
+    },
+    {
+        "widget": "products/product_card_list",
+        "data": 
+        [
+            {
+                "link": "/",
+                "image": "./assets/imgs/header-1.jpg",
+                "text": "解决方案"
+            },
+            {
+                "link": "/about",
+                "image": "./assets/imgs/header-2.jpg",
+                "text": "ABOUT US"
+            },
+            {
+                "link": "#",
+                "image": "./assets/imgs/header-3.jpg",
+                "text": "宇宙 Universe"
+            },
+            {
+                "link": "/about",
+                "image": "./assets/imgs/header-4.jpg",
+                "text": "中華文化"
+            }
+        ]
+    },
+    {
+        "widget": "products/product_category_title",
+        "data": 
+        {
+            "title": "网络防火墙"
+        }
+    },
+    {
+        "widget": "products/product_card_list",
+        "data": 
+        [
+            {
+                "link": "/",
+                "image": "./assets/imgs/header-1.jpg",
+                "text": "解决方案"
+            },
+            {
+                "link": "/about",
+                "image": "./assets/imgs/header-2.jpg",
+                "text": "ABOUT US"
+            },
+            {
+                "link": "#",
+                "image": "./assets/imgs/header-3.jpg",
+                "text": "宇宙 Universe"
+            },
+            {
+                "link": "/about",
+                "image": "./assets/imgs/header-4.jpg",
+                "text": "中華文化"
+            }
+        ]
+    }
+]

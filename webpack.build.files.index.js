@@ -26,6 +26,7 @@ const htmlfiles = {
     news: [
         // output news document file pattern: 'news_[id].html',
         // the item correspond to the same filename js and json file.
+        "news_20190504",
         "news_20190503",
         "news_20190502",
         "news_20190501",
@@ -45,6 +46,14 @@ const htmlfiles = {
             template: './src/views/template_solution.pug',
             output: 'solution_A201905.html',
             title: 'A201905解决方案'
+        }
+    ],
+    products: [
+        {
+            entrypoint_id: 'product_list',
+            template: './src/views/template_product.pug',
+            output: 'product_list.html',
+            title: '产品中心'
         }
     ]
 }
@@ -68,6 +77,10 @@ module.exports = {
         // ep for htmlfiles.solutions
         for (id in htmlfiles.solutions) {
             epString += `"${htmlfiles.solutions[id].entrypoint_id}":"./src/solutions/${htmlfiles.solutions[id].entrypoint_id}.js",`;
+        }
+        // ep for htmlfiles.products
+        for (id in htmlfiles.products) {
+            epString += `"${htmlfiles.products[id].entrypoint_id}":"./src/products/${htmlfiles.products[id].entrypoint_id}.js",`;
         }
 
         if (epString !== '') {
@@ -142,6 +155,22 @@ module.exports = {
             });
             returnList.push(tempObj);
         }
+        // HtmlWebpackPlugin for htmlfiles.products
+        for (id in htmlfiles.products) {
+            tempObj = new HtmlWebpackPlugin({
+                chunks: [
+                  `${htmlfiles.products[id].entrypoint_id}`,
+                ],
+                favicon: './src/favicon.ico',
+                filename: htmlfiles.products[id].output,
+                inject: 'body',
+                minify: true,
+                template: htmlfiles.products[id].template,
+                title: htmlfiles.products[id].title
+            });
+            returnList.push(tempObj);
+        }
+
 
         return returnList
     }

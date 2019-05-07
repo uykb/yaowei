@@ -6,12 +6,11 @@ let template = require(`../views/topmenu.pug`);
 document.write(template({data: topmenu}));
 
 // Content part
-// Part1
-let part = require('../jsons/products/product_list_part1.json');
-template = require(`../views/${part.widget}.pug`);
-document.write(template({data: part.data}));
-// Part2, The news list part.
-
+let part = require('../jsons/products/product_list.json');
+for (let id in part) {
+    template = require(`../views/${part[id].widget}.pug`);
+    document.write(template({data: part[id].data}));
+}
 
 // Footer part
 template = require(`../views/footer.pug`);

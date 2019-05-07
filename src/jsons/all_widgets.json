@@ -1,6 +1,6 @@
 [
     {
-        "widget": "addtag",
+        "widget": "widgets/addtag",
         "data": "tag-pagetop"
     },
     {
@@ -51,11 +51,11 @@
         }
     },
     {
-        "widget": "addtag",
+        "widget": "widgets/addtag",
         "data": "tag-carousel"
     },
     {
-        "widget": "carousel_01",
+        "widget": "widgets/carousel_01",
         "data": 
         [
             {
@@ -82,7 +82,7 @@
         ] 
     },
     {
-        "widget": "carousel_02",
+        "widget": "widgets/carousel_02",
         "data": 
         [
             {
@@ -109,7 +109,7 @@
         ] 
     },
     {
-        "widget": "carousel_03",
+        "widget": "widgets/carousel_03",
         "data": 
         [
             {
@@ -136,11 +136,11 @@
         ]
     },
     {
-        "widget": "addtag",
+        "widget": "widgets/addtag",
         "data": "tag-headline"
     },
     {
-        "widget": "headline_01",
+        "widget": "widgets/headline_01",
         "data": 
         {
             "bg_image": "./assets/imgs/header-1.jpg",
@@ -151,7 +151,7 @@
         }
     },
     {
-        "widget": "headline_02",
+        "widget": "widgets/headline_02",
         "data": 
         {
             "bg_image": "./assets/imgs/header-1.jpg",
@@ -162,7 +162,7 @@
         }
     },
     {
-        "widget": "headline_03",
+        "widget": "widgets/headline_03",
         "data": 
         {
             "bg_image": "./assets/imgs/header-2.jpg",
@@ -189,7 +189,7 @@
         }
     },
     {
-        "widget": "headline_04",
+        "widget": "widgets/headline_04",
         "data": 
         {
             "bg_image": "./assets/imgs/header-3.jpg",
@@ -200,7 +200,7 @@
         }
     },
     {
-        "widget": "headline_05",
+        "widget": "widgets/headline_05",
         "data": 
         {
             "bg_image": "./assets/imgs/header-5.jpg",
@@ -211,7 +211,7 @@
         }
     },
     {
-        "widget": "headline_06",
+        "widget": "widgets/headline_06",
         "data": 
         {
             "bg_image": "./assets/imgs/header-1.jpg",
@@ -222,7 +222,7 @@
         }
     },
     {
-        "widget": "headline_07",
+        "widget": "widgets/headline_07",
         "data": 
         {
             "bg_image": "./assets/imgs/header-1.jpg",
@@ -244,7 +244,7 @@
         }
     },
     {
-        "widget": "headline_08",
+        "widget": "widgets/headline_08",
         "data": 
         {
             "bg_image": "./assets/imgs/header-4.jpg",
@@ -273,7 +273,7 @@
         }
     },
     {
-        "widget": "headline_09",
+        "widget": "widgets/headline_09",
         "data": 
         {
             "headline": "质优价廉的FBA头程解决方案",
@@ -283,7 +283,7 @@
         }
     },
     {
-        "widget": "headline_10",
+        "widget": "widgets/headline_10",
         "data": 
         {
             "headline": "没有谁<br>能比你自己<br>做得更好！",
@@ -309,11 +309,11 @@
         }
     },
     {
-        "widget": "addtag",
+        "widget": "widgets/addtag",
         "data": "tag-cardlist"
     },
     {
-        "widget": "cardlist_01",
+        "widget": "widgets/cardlist_01",
         "data": 
         [
             {
@@ -339,7 +339,7 @@
         ]
     },
     {
-        "widget": "cardlist_02",
+        "widget": "widgets/cardlist_02",
         "data": 
         [
             {
@@ -365,7 +365,7 @@
         ]
     },
     {
-        "widget": "cardlist_03",
+        "widget": "widgets/cardlist_03",
         "data": 
         [
             {
@@ -392,7 +392,7 @@
         ]
     },
     {
-        "widget": "cardlist_04",
+        "widget": "widgets/cardlist_04",
         "data": 
         [
             {
@@ -419,7 +419,7 @@
         ]
     },
     {
-        "widget": "cardlist_05",
+        "widget": "widgets/cardlist_05",
         "data": 
         [
             {
@@ -443,7 +443,7 @@
         ]
     },
     {
-        "widget": "cardlist_06",
+        "widget": "widgets/cardlist_06",
         "data": 
         [
             {
@@ -467,11 +467,11 @@
         ]
     },
     {
-        "widget": "addtag",
+        "widget": "widgets/addtag",
         "data": "tag-linklist"
     },
     {
-        "widget": "linklist_01",
+        "widget": "widgets/linklist_01",
         "data": 
         [
             {
@@ -501,7 +501,7 @@
         ]
     },
     {
-        "widget": "linklist_02",
+        "widget": "widgets/linklist_02",
         "data": 
         [
             {
@@ -527,11 +527,11 @@
         ]
     },
     {
-        "widget": "addtag",
+        "widget": "widgets/addtag",
         "data": "tag-quote"
     },
     {
-        "widget": "quote_01",
+        "widget": "widgets/quote_01",
         "data": 
         {
             "image": "./assets/imgs/header-2.jpg",
@@ -541,7 +541,7 @@
         }
     },
     {
-        "widget": "quote_02",
+        "widget": "widgets/quote_02",
         "data": 
         {
             "image": "./assets/imgs/header-1.jpg",
@@ -553,11 +553,11 @@
         }
     },
     {
-        "widget": "addtag",
+        "widget": "widgets/addtag",
         "data": "tag-pricelist"
     },
     {
-        "widget": "pricelist_01",
+        "widget": "widgets/pricelist_01",
         "data": 
         [
             {
@@ -606,7 +606,7 @@
         ]
     },
     {
-        "widget": "pricelist_02",
+        "widget": "widgets/pricelist_02",
         "data": 
         [
             {
@@ -658,15 +658,15 @@
         ]
     },
     {
-        "widget": "addtag",
+        "widget": "widgets/addtag",
         "data": "tag-widgetdemos"
     },
     {
-        "widget": "wizarddemo",
+        "widget": "widgets/wizarddemo",
         "data": ""
     },
     {
-        "widget": "tabledemo",
+        "widget": "widgets/tabledemo",
         "data":
         {
             "header_cols": [0],
@@ -685,7 +685,7 @@
         }
     },
     {
-        "widget": "footerdemo",
+        "widget": "widgets/footerdemo",
         "data": ""
     }
 ]
