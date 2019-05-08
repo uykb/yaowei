@@ -46,18 +46,61 @@
         }
     },
     {
-        "widget": "solutions/solution_doc_paragraph",
+        "widget": "solutions/solution_doc_list_flush",
         "data": 
         {
             "headline": "典型用户",
-            "htmlcontent": "<p><strong><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\"><a href=\"http://10086.cn\" target=\"_blank\">中国移动通信有限公司</a></li><li class=\"list-group-item\"><a href=\"http://www.chinaunicom.com.cn/\" target=\"_blank\">中国联合网络通信集团有限公司</a></li><li class=\"list-group-item\">中国网络通信有限公司</li><li class=\"list-group-item\">东北移动互联通信技术有限公司</li><li class=\"list-group-item\">浙江弘毅交通技术有限公司</li><li class=\"list-group-item\">以及更多......</li></ul></strong></p>"
+            "listitems": 
+            [
+                {
+                    "caption": "中国移动通信集团有限公司",
+                    "link": "http://10086.cn"
+                },
+                {
+                    "caption": "中国联合网络通信集团有限公司",
+                    "link": "http://www.chinaunicom.com.cn/"
+                },
+                {
+                    "caption": "美国ABC广播传媒有限公司（大中国区）",
+                    "link": ""
+                },
+                {
+                    "caption": "东北移动互联通信技术有限公司",
+                    "link": ""
+                },
+                {
+                    "caption": "浙江华弘毅图交通技术有限公司",
+                    "link": ""
+                },
+                {
+                    "caption": "还有更多......"
+                }
+            ]
+        }
+    },
+    {
+        "widget": "solutions/solution_doc_download",
+        "data": 
+        {
+            "headline": "资料下载",
+            "downloads": 
+            [
+                {
+                    "caption": "A201905网络构建解决方案PPT介绍",
+                    "link": "./assets/downloads/example.pptx"
+                },
+                {
+                    "caption": "A201905网络构建资料压缩包文件",
+                    "link": "./assets/downloads/example.zip"
+                }
+            ]
         }
     },
     {
         "widget": "solutions/solution_space",
         "data": 
         {
-            "class": "pt-4 pb-5"
+            "class": "pt-0 pb-3 pt-lg-3 pb-lg-5"
         }
     }
 ]

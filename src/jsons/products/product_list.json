@@ -32,7 +32,7 @@
         "widget": "products/product_category_title",
         "data":
         {
-            "title": "路由器网关"
+            "title": "路由器/网关设备"
         }
     },
     {
@@ -40,24 +40,19 @@
         "data": 
         [
             {
-                "link": "/",
-                "image": "./assets/imgs/header-1.jpg",
-                "text": "解决方案"
+                "link": "product_ER3200G2.html",
+                "image": "./assets/imgs/products/product_ER3200G2_01.jpg",
+                "text": "ER3200G2千兆路由器"
             },
             {
-                "link": "/about",
-                "image": "./assets/imgs/header-2.jpg",
-                "text": "ABOUT US"
+                "link": "product_WVR1300L.html",
+                "image": "./assets/imgs/products/product_WVR1300L_01.jpg",
+                "text": "WVR1300L无线路由器"
             },
             {
                 "link": "#",
-                "image": "./assets/imgs/header-3.jpg",
-                "text": "宇宙 Universe"
-            },
-            {
-                "link": "/about",
-                "image": "./assets/imgs/header-4.jpg",
-                "text": "中華文化"
+                "image": "./assets/imgs/products/product_SG1210P_01.jpg",
+                "text": "网关设备"
             }
         ]
     },
@@ -73,24 +68,24 @@
         "data": 
         [
             {
-                "link": "/",
-                "image": "./assets/imgs/header-1.jpg",
-                "text": "解决方案"
+                "link": "product_F100CG2.html",
+                "image": "./assets/imgs/products/product_F100CG2_01.jpg",
+                "text": "F100CG2网络防火墙"
             },
             {
-                "link": "/about",
-                "image": "./assets/imgs/header-2.jpg",
-                "text": "ABOUT US"
+                "link": "product_USG6106.html",
+                "image": "./assets/imgs/products/product_USG6106_01.jpg",
+                "text": "USG6106网络防火墙"
             },
             {
-                "link": "#",
-                "image": "./assets/imgs/header-3.jpg",
-                "text": "宇宙 Universe"
+                "link": "product_2951.html",
+                "image": "./assets/imgs/products/product_2951_01.jpg",
+                "text": "2951网络防火墙"
             },
             {
-                "link": "/about",
-                "image": "./assets/imgs/header-4.jpg",
-                "text": "中華文化"
+                "link": "product_3925E.html",
+                "image": "./assets/imgs/products/product_3925E_01.jpg",
+                "text": "3925E网络防火墙"
             }
         ]
     }
