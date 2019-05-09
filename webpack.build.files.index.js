@@ -54,6 +54,12 @@ const htmlfiles = {
             template: './src/views/template_product.pug',
             output: 'product_list.html',
             title: '产品中心'
+        },
+        {
+            entrypoint_id: 'product_ER3200G2',
+            template: './src/views/template_product.pug',
+            output: 'product_ER3200G2.html',
+            title: 'ER3200G2千兆路由器'
         }
     ]
 }

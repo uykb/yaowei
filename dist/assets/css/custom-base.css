@@ -71,19 +71,19 @@ Go To Top, code comes from Bootstrap
     display: none;
     position: relative;
     z-index: 101;
-    width: 2rem;
-    height: 2rem;
-    background-color: rgb(71, 243, 36);
+    width: 36px;
+    height: 36px;
+    background-color: rgb(36, 160, 243);
     color: #fff;
-    font-size: 1rem;
-    border-radius: 1.2rem;
-    opacity: 0.6;
-    transition: 0.3s ease-out;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    opacity: 0.75;
+    transition: 0.2s ease-out;
 }
 .u-go-to__inner {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 100%;
+    left: 100%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
