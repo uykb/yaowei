@@ -13,7 +13,7 @@
             [
                 {
                     "title": "HOME",
-                    "link": "/"
+                    "link": "./"
                 },
                 {
                     "title": "Carousel",

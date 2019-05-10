@@ -61,6 +61,18 @@ const htmlfiles = {
             template: './src/views/template_product.pug',
             output: 'product_ER3200G2.html',
             title: 'ER3200G2千兆路由器'
+        },
+        {
+            entrypoint_id: 'product_WVR1300L',
+            template: './src/views/template_product.pug',
+            output: 'product_WVR1300L.html',
+            title: 'WVR1300L双频无线企业级路由器'
+        },
+        {
+            entrypoint_id: 'product_F100CG2',
+            template: './src/views/template_product.pug',
+            output: 'product_F100CG2.html',
+            title: 'WVR1300L双频无线企业级路由器'
         }
     ]
 }

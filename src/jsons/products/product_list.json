@@ -9,12 +9,12 @@
             "bclist": 
             [
                 {
-                    "link": "/",
+                    "link": "./",
                     "caption": "首页",
                     "active": false
                 },
                 {
-                    "link": "/product_list.html",
+                    "link": "./product_list.html",
                     "caption": "产品中心",
                     "active": true
                 }

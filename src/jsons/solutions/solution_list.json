@@ -11,12 +11,12 @@
             "bclist": 
             [
                 {
-                    "link": "/",
+                    "link": "./",
                     "caption": "首页",
                     "active": false
                 },
                 {
-                    "link": "/solution_list.html",
+                    "link": "./solution_list.html",
                     "caption": "解决方案",
                     "active": true
                 }
