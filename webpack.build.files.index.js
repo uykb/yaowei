@@ -117,6 +117,7 @@ module.exports = {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
                   `${htmlfiles.index[id].entrypoint_id}`,
+                  'custom-common'
                 ],
                 favicon: './src/favicon.ico',
                 filename: htmlfiles.index[id].output,
@@ -132,6 +133,7 @@ module.exports = {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
                   `news_list_${id}`,
+                  'custom-common'
                 ],
                 favicon: './src/favicon.ico',
                 filename: `news_list_${id}.html`,
@@ -149,6 +151,7 @@ module.exports = {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
                   htmlfiles.news[id],
+                  'custom-common'
                 ],
                 favicon: './src/favicon.ico',
                 filename: `${htmlfiles.news[id]}.html`,
@@ -164,6 +167,7 @@ module.exports = {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
                   `${htmlfiles.solutions[id].entrypoint_id}`,
+                  'custom-common'
                 ],
                 favicon: './src/favicon.ico',
                 filename: htmlfiles.solutions[id].output,
@@ -179,6 +183,7 @@ module.exports = {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
                   `${htmlfiles.products[id].entrypoint_id}`,
+                  'custom-common'
                 ],
                 favicon: './src/favicon.ico',
                 filename: htmlfiles.products[id].output,

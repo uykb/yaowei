@@ -1,6 +1,7 @@
 const rulesConfig = require('./webpack.rules.config');
 const devServerConfig = require('./webpack.server.config');
 const buildFiles = require('./webpack.build.files.index');
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 	module: {
@@ -21,18 +22,18 @@ module.exports = {
 	devServer: devServerConfig.devServer,
 
 	optimization: {
+        // minimizer: [new UglifyJsPlugin()],
 		splitChunks: {
 			cacheGroups: {
 				vendors: {
 					priority: -10,
 					test: /[\\/]node_modules[\\/]/
 				}
-			},
-
-			chunks: 'async',
+            },
+			chunks: 'all', // 'async',
 			minChunks: 1,
 			minSize: 30000,
-			name: true
+			name: 'custom-common'
 		}
 	}
 };
