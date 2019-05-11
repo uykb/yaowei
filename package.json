@@ -4,10 +4,10 @@
   "description": "Webpack small business website initial project ☀️",
   "main": "webpack.config.js",
   "scripts": {
-    "start:node": "node app.js",
+    "start": "node app.js",
     "start:nodemon": "nodemon app.js",
     "start:win": "npx run node_modules/webpack-dev-server/bin/webpack-dev-server.js --open",
-    "start": "webpack-dev-server --open",
+    "start:dev": "webpack-dev-server --open",
     "watch": "webpack --watch",
     "build": "webpack --config webpack.config.js"
   },
