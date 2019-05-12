@@ -40,17 +40,17 @@
         "data": 
         [
             {
-                "link": "product_ER3200G2.html",
+                "id": "product_ER3200G2",
                 "image": "./assets/imgs/products/product_ER3200G2_01.jpg",
                 "text": "ER3200G2千兆路由器"
             },
             {
-                "link": "product_WVR1300L.html",
+                "id": "product_WVR1300L",
                 "image": "./assets/imgs/products/product_WVR1300L_01.jpg",
                 "text": "WVR1300L无线路由器"
             },
             {
-                "link": "#",
+                "id": "",
                 "image": "./assets/imgs/products/product_SG1210P_01.jpg",
                 "text": "网关设备"
             }
@@ -68,22 +68,22 @@
         "data": 
         [
             {
-                "link": "product_F100CG2.html",
+                "id": "product_F100CG2",
                 "image": "./assets/imgs/products/product_F100CG2_01.jpg",
                 "text": "F100CG2网络防火墙"
             },
             {
-                "link": "product_USG6106.html",
+                "id": "product_USG6106",
                 "image": "./assets/imgs/products/product_USG6106_01.jpg",
                 "text": "USG6106网络防火墙"
             },
             {
-                "link": "product_2951.html",
+                "id": "product_2951",
                 "image": "./assets/imgs/products/product_2951_01.jpg",
                 "text": "2951网络防火墙"
             },
             {
-                "link": "product_3925E.html",
+                "id": "",
                 "image": "./assets/imgs/products/product_3925E_01.jpg",
                 "text": "3925E网络防火墙"
             }

@@ -9,5 +9,5 @@ section.bg-white.pb-0.pt-0
                         h2.display-4!= data.headline
                         p.lead!= data.descript
                         div.justify-content-end.text-right
-                            if data.button_caption != ''
-                                a.btn.btn-lg.btn-success.text-white(href=data.button_link)!= data.button_caption
+                        if (data.id != '') && (data.button_caption != '')
+                                a.btn.btn-lg.btn-success.text-white(href=`${data.id}.html`)!= data.button_caption

@@ -16,6 +16,18 @@ const htmlfiles = {
             title: '关于网站'
         },
         {
+            entrypoint_id: 'solutions/solution_list',
+            template: './src/views/template_solution.pug',
+            output: 'solution_list.html',
+            title: '解决方案'
+        },
+        {
+            entrypoint_id: 'products/product_list',
+            template: './src/views/template_product.pug',
+            output: 'product_list.html',
+            title: '产品中心'
+        },
+        {
             entrypoint_id: 'all_widgets',
             template: './src/views/template_all_widgets.pug',
             output: 'all_widgets.html',
@@ -26,55 +38,23 @@ const htmlfiles = {
     news: [
         // output news document file pattern: 'news_[id].html',
         // the item correspond to the same filename js and json file.
-        "news_20190506",
-        "news_20190505",
-        "news_20190504",
-        "news_20190503",
-        "news_20190502",
-        "news_20190501",
-        "news_20190500",
-        "news_20190401",
-        "news_20190400"
+        'news_20190506',
+        'news_20190505',
+        'news_20190504',
+        'news_20190503',
+        'news_20190502',
+        'news_20190501',
+        'news_20190500',
+        'news_20190401',
+        'news_20190400'
     ],
     solutions: [
-        {
-            entrypoint_id: 'solution_list',
-            template: './src/views/template_solution.pug',
-            output: 'solution_list.html',
-            title: '解决方案'
-        },
-        {
-            entrypoint_id: 'solution_A201905',
-            template: './src/views/template_solution.pug',
-            output: 'solution_A201905.html',
-            title: 'A201905解决方案'
-        }
+        'solution_A201905'
     ],
     products: [
-        {
-            entrypoint_id: 'product_list',
-            template: './src/views/template_product.pug',
-            output: 'product_list.html',
-            title: '产品中心'
-        },
-        {
-            entrypoint_id: 'product_ER3200G2',
-            template: './src/views/template_product.pug',
-            output: 'product_ER3200G2.html',
-            title: 'ER3200G2千兆路由器'
-        },
-        {
-            entrypoint_id: 'product_WVR1300L',
-            template: './src/views/template_product.pug',
-            output: 'product_WVR1300L.html',
-            title: 'WVR1300L双频无线企业级路由器'
-        },
-        {
-            entrypoint_id: 'product_F100CG2',
-            template: './src/views/template_product.pug',
-            output: 'product_F100CG2.html',
-            title: 'WVR1300L双频无线企业级路由器'
-        }
+        'product_ER3200G2',
+        'product_WVR1300L',
+        'product_F100CG2'
     ]
 }
 
@@ -88,19 +68,19 @@ module.exports = {
         }
         // ep for htmlfiles.news_list
         for (id = 1; id <= htmlfiles.news_list_page_count; id++) {
-            epString += `"news_list_${id}":"./src/news/news_list_${id}.js",`;
+            epString += `"news/news_list_${id}":"./src/news/news_list_${id}.js",`;
         }
         // ep for htmlfiles.news
         for (id in htmlfiles.news) {
-            epString += `"${htmlfiles.news[id]}":"./src/news/${htmlfiles.news[id]}.js",`;
+            epString += `"news/${htmlfiles.news[id]}":"./src/news/${htmlfiles.news[id]}.js",`;
         }
         // ep for htmlfiles.solutions
         for (id in htmlfiles.solutions) {
-            epString += `"${htmlfiles.solutions[id].entrypoint_id}":"./src/solutions/${htmlfiles.solutions[id].entrypoint_id}.js",`;
+            epString += `"solutions/${htmlfiles.solutions[id]}":"./src/solutions/${htmlfiles.solutions[id]}.js",`;
         }
         // ep for htmlfiles.products
         for (id in htmlfiles.products) {
-            epString += `"${htmlfiles.products[id].entrypoint_id}":"./src/products/${htmlfiles.products[id].entrypoint_id}.js",`;
+            epString += `"products/${htmlfiles.products[id]}":"./src/products/${htmlfiles.products[id]}.js",`;
         }
 
         if (epString !== '') {
@@ -129,12 +109,12 @@ module.exports = {
             });
             returnList.push(tempObj);
         }
-        // HtmlWebpackPlugin for htmlfiles.news_list
+        // HtmlWebpackPlugin for htmlfiles.news_list (Multi-pages)
         for (id = 1; id <= htmlfiles.news_list_page_count; id++) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                  `news_list_${id}`,
-                  'custom-common'
+                    `news/news_list_${id}`,
+                    'custom-common'
                 ],
                 favicon: './src/favicon.ico',
                 filename: `news_list_${id}.html`,
@@ -151,8 +131,8 @@ module.exports = {
             content = require(`./src/jsons/news/${htmlfiles.news[id]}.json`);
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                  htmlfiles.news[id],
-                  'custom-common'
+                    `news/${htmlfiles.news[id]}`,
+                    'custom-common'
                 ],
                 favicon: './src/favicon.ico',
                 filename: `${htmlfiles.news[id]}.html`,
@@ -167,15 +147,15 @@ module.exports = {
         for (id in htmlfiles.solutions) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                  `${htmlfiles.solutions[id].entrypoint_id}`,
-                  'custom-common'
+                    `solutions/${htmlfiles.solutions[id]}`,
+                    'custom-common'
                 ],
                 favicon: './src/favicon.ico',
-                filename: htmlfiles.solutions[id].output,
+                filename: `${htmlfiles.solutions[id]}.html`,
                 inject: 'body',
                 minify: true,
-                template: htmlfiles.solutions[id].template,
-                title: htmlfiles.solutions[id].title
+                template: './src/views/template_solution.pug',
+                title: '解决方案 - 详情页'
             });
             returnList.push(tempObj);
         }
@@ -183,19 +163,18 @@ module.exports = {
         for (id in htmlfiles.products) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                  `${htmlfiles.products[id].entrypoint_id}`,
-                  'custom-common'
+                    `products/${htmlfiles.products[id]}`,
+                    'custom-common'
                 ],
                 favicon: './src/favicon.ico',
-                filename: htmlfiles.products[id].output,
+                filename: `${htmlfiles.products[id]}.html`,
                 inject: 'body',
                 minify: true,
-                template: htmlfiles.products[id].template,
-                title: htmlfiles.products[id].title
+                template: './src/views/template_product.pug',
+                title: '产品中心 - 详情页'
             });
             returnList.push(tempObj);
         }
-
 
         return returnList
     }

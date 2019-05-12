@@ -34,11 +34,11 @@
         "widget": "solutions/solution_image_left",
         "data": 
         {
+            "id": "solution_A201905",
             "bg_image": "./assets/imgs/header-1.jpg",
             "headline": "网络构建解决方案",
             "descript": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户，涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
-            "button_caption": "查看详情 More...",
-            "button_link": "solution_A201905.html"
+            "button_caption": "查看详情 More..."
         }
     },
     {
@@ -52,11 +52,11 @@
         "widget": "solutions/solution_image_right",
         "data": 
         {
+            "id": "solution_B201901",
             "bg_image": "./assets/imgs/header-2.jpg",
             "headline": "信息安全解决方案",
             "descript": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户，涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
-            "button_caption": "查看详情 More...",
-            "button_link": "solution_B201901.html"
+            "button_caption": "查看详情 More..."
         }
     },
     {
@@ -70,11 +70,11 @@
         "widget": "solutions/solution_image_left",
         "data": 
         {
+            "id": "",
             "bg_image": "./assets/imgs/header-3.jpg",
             "headline": "数据维护解决方案",
             "descript": "涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户，涵盖制造、信息技术、互联网、航空、陆运、海运各行业客户。",
-            "button_caption": "查看详情 More...",
-            "button_link": "solution_C201904.html"
+            "button_caption": "查看详情 More..."
         }
     },
     {

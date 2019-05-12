@@ -1,11 +1,12 @@
 {
   "name": "wp-site-biz",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Webpack small business website initial project ☀️",
   "main": "webpack.config.js",
   "scripts": {
     "start": "node app.js",
     "start:nodemon": "nodemon app.js",
+    "start:pm2": "pm2 start ecosystem.config.js",
     "start:win": "npx run node_modules/webpack-dev-server/bin/webpack-dev-server.js --open",
     "start:dev": "webpack-dev-server --open",
     "watch": "webpack --watch",
