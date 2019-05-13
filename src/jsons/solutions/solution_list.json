@@ -1,6 +1,6 @@
 [
     {
-        "widget": "solutions/solution_title_light_text",
+        "widget": "widgets/common_title_light",
         "data": 
         {
             "bg_image": "./assets/imgs/solutions/solution_list_bg.jpg",
@@ -24,10 +24,10 @@
         }
     },
     {
-        "widget": "solutions/solution_space",
+        "widget": "widgets/common_space",
         "data": 
         {
-            "class": "pt-4 pb-5"
+            "class": "bg-white pt-4 pb-5"
         }
     },
     {
@@ -42,10 +42,10 @@
         }
     },
     {
-        "widget": "solutions/solution_space",
+        "widget": "widgets/common_space",
         "data": 
         {
-            "class": "pt-4 pb-5"
+            "class": "bg-white pt-4 pb-5"
         }
     },
     {
@@ -60,10 +60,10 @@
         }
     },
     {
-        "widget": "solutions/solution_space",
+        "widget": "widgets/common_space",
         "data": 
         {
-            "class": "pt-4 pb-5"
+            "class": "bg-white pt-4 pb-5"
         }
     },
     {
@@ -78,10 +78,10 @@
         }
     },
     {
-        "widget": "solutions/solution_space",
+        "widget": "widgets/common_space",
         "data": 
         {
-            "class": "pt-4 pb-5"
+            "class": "bg-white pt-4 pb-5"
         }
     }
 ]

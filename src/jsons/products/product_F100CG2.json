@@ -1,6 +1,6 @@
 [
     {
-        "widget": "products/product_title_dark_text",
+        "widget": "widgets/common_title_dark",
         "data": 
         {
             "bg_image": "./assets/imgs/products/product_doc_bg.jpg",
@@ -79,10 +79,10 @@
                 }
             },
             {
-                "widget": "products/product_space",
+                "widget": "widgets/common_space",
                 "data": 
                 {
-                    "class": "pb-1 pb-lg-3"
+                    "class": "bg-white pb-1 pb-lg-3"
                 }
             },
             {
@@ -116,10 +116,10 @@
                 }
             },
             {
-                "widget": "products/product_space",
+                "widget": "widgets/common_space",
                 "data": 
                 {
-                    "class": "pb-1 pb-lg-3"
+                    "class": "bg-white pb-1 pb-lg-3"
                 }
             },
             {
@@ -141,10 +141,10 @@
                 }
             },
             {
-                "widget": "products/product_space",
+                "widget": "widgets/common_space",
                 "data": 
                 {
-                    "class": "pb-1 pb-lg-3"
+                    "class": "bg-white pb-1 pb-lg-3"
                 }
             }
         ]

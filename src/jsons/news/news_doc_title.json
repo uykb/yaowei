@@ -1,5 +1,5 @@
 {
-    "widget": "news/news_doc_title",
+    "widget": "widgets/common_title_dark",
     "data": 
     {
         "bg_image": "./assets/imgs/news/news_doc_title_bg.jpg",

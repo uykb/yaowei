@@ -1,6 +1,6 @@
 [
     {
-        "widget": "products/product_title_light_text",
+        "widget": "widgets/common_title_light",
         "data": 
         {
             "bg_image": "./assets/imgs/products/product_list_bg.jpg",
@@ -22,16 +22,17 @@
         }
     },
     {
-        "widget": "products/product_space",
+        "widget": "widgets/common_space",
         "data": 
         {
             "class": "pt-4 pb-4"
         }
     },
     {
-        "widget": "products/product_category_title",
+        "widget": "widgets/common_headline_title",
         "data":
         {
+            "class": "pt-0 pb-0",
             "title": "路由器/网关设备"
         }
     },
@@ -57,9 +58,10 @@
         ]
     },
     {
-        "widget": "products/product_category_title",
+        "widget": "widgets/common_headline_title",
         "data": 
         {
+            "class": "pt-0 pb-0",
             "title": "网络防火墙"
         }
     },

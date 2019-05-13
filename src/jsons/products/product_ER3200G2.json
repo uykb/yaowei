@@ -1,6 +1,6 @@
 [
     {
-        "widget": "products/product_title_dark_text",
+        "widget": "widgets/common_title_dark",
         "data": 
         {
             "bg_image": "./assets/imgs/products/product_doc_bg.jpg",
@@ -22,16 +22,20 @@
         }
     },
     {
-        "widget": "products/product_image_list",
+        "widget": "widgets/common_image_list",
         "data": 
-        [
-            "./assets/imgs/products/product_ER3200G2_04.jpg",
-            "./assets/imgs/products/product_ER3200G2_05.jpg",
-            "./assets/imgs/products/product_ER3200G2_06.jpg",
-            "./assets/imgs/products/product_ER3200G2_07.jpg",
-            "./assets/imgs/products/product_ER3200G2_08.jpg",
-            "./assets/imgs/products/product_ER3200G2_09.jpg",
-            "./assets/imgs/products/product_ER3200G2_10.jpg"
-        ]
+        {
+            "class": "bg-white p-0 m-0",
+            "imagelist": 
+            [
+                "./assets/imgs/products/product_ER3200G2_04.jpg",
+                "./assets/imgs/products/product_ER3200G2_05.jpg",
+                "./assets/imgs/products/product_ER3200G2_06.jpg",
+                "./assets/imgs/products/product_ER3200G2_07.jpg",
+                "./assets/imgs/products/product_ER3200G2_08.jpg",
+                "./assets/imgs/products/product_ER3200G2_09.jpg",
+                "./assets/imgs/products/product_ER3200G2_10.jpg"
+            ]
+        }
     }
 ]

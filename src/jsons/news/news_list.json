@@ -1,6 +1,6 @@
 [
     {
-        "widget": "news/news_list_title",
+        "widget": "widgets/common_title_light",
         "data": 
         {
             "bg_image": "./assets/imgs/news/news_list_bg.jpg",
@@ -30,6 +30,7 @@
             "image": "./assets/imgs/news/news_list_side.svg",
             "newsperpage": 3,
             "newslist": [
+                "news_20190507",
                 "news_20190506",
                 "news_20190505",
                 "news_20190504",

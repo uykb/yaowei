@@ -1,6 +1,6 @@
 [
     {
-        "widget": "solutions/solution_title_dark_text",
+        "widget": "widgets/common_title_dark",
         "data": 
         {
             "bg_image": "./assets/imgs/solutions/solution_doc_bg.jpg",
@@ -97,10 +97,10 @@
         }
     },
     {
-        "widget": "solutions/solution_space",
+        "widget": "widgets/common_space",
         "data": 
         {
-            "class": "pt-0 pb-3 pt-lg-3 pb-lg-5"
+            "class": "bg-white pt-0 pb-3 pt-lg-3 pb-lg-5"
         }
     }
 ]

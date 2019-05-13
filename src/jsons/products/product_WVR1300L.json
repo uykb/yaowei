@@ -1,6 +1,6 @@
 [
     {
-        "widget": "products/product_title_dark_text",
+        "widget": "widgets/common_title_dark",
         "data": 
         {
             "bg_image": "./assets/imgs/products/product_doc_bg.jpg",
@@ -22,19 +22,23 @@
         }
     },
     {
-        "widget": "products/product_image_list",
+        "widget": "widgets/common_image_list",
         "data": 
-        [
-            "./assets/imgs/products/product_WVR1300L_11.jpg",
-            "./assets/imgs/products/product_WVR1300L_12.jpg",
-            "./assets/imgs/products/product_WVR1300L_13.jpg",
-            "./assets/imgs/products/product_WVR1300L_14.jpg",
-            "./assets/imgs/products/product_WVR1300L_15.jpg",
-            "./assets/imgs/products/product_WVR1300L_16.jpg",
-            "./assets/imgs/products/product_WVR1300L_17.jpg",
-            "./assets/imgs/products/product_WVR1300L_18.jpg",
-            "./assets/imgs/products/product_WVR1300L_19.jpg",
-            "./assets/imgs/products/product_WVR1300L_20.jpg"
-        ]
+        {
+            "class": "bg-white p-0 m-0",
+            "imagelist": 
+            [
+                "./assets/imgs/products/product_WVR1300L_11.jpg",
+                "./assets/imgs/products/product_WVR1300L_12.jpg",
+                "./assets/imgs/products/product_WVR1300L_13.jpg",
+                "./assets/imgs/products/product_WVR1300L_14.jpg",
+                "./assets/imgs/products/product_WVR1300L_15.jpg",
+                "./assets/imgs/products/product_WVR1300L_16.jpg",
+                "./assets/imgs/products/product_WVR1300L_17.jpg",
+                "./assets/imgs/products/product_WVR1300L_18.jpg",
+                "./assets/imgs/products/product_WVR1300L_19.jpg",
+                "./assets/imgs/products/product_WVR1300L_20.jpg"
+            ]
+        }
     }
 ]
