@@ -1,6 +1,8 @@
 {
-    "addclass": "",
+    "class": "sticky-top",
     "html": true,
+    "brandlogo": "./assets/imgs/logo-1.svg",
+    "brandlogolink": "./",
     "menu":
     [
         {

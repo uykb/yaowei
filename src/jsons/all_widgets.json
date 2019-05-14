@@ -7,7 +7,7 @@
         "widget": "topmenu",
         "data": 
         {
-            "addclass": "sticky-top",
+            "class": "sticky-top",
             "html": false,
             "menu":
             [
