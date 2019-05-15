@@ -62,6 +62,10 @@
         ]
     },
     {
+        "widget": "widgets/addtag",
+        "data": "tag_LXFS"
+    },
+    {
         "widget": "widgets/common_headline_title",
         "data": 
         {
@@ -99,6 +103,10 @@
         ]
     },
     {
+        "widget": "widgets/addtag",
+        "data": "tag_TD"
+    },
+    {
         "widget": "widgets/common_headline_title",
         "data": 
         {
@@ -107,7 +115,7 @@
         }
     },
     {
-        "widget": "widgets/common_crew_list",
+        "widget": "widgets/common_crew_list_01",
         "data": 
         [
             {

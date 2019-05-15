@@ -1,0 +1,16 @@
+section.bg-light.pb-0.pt-3
+    div.container
+        div.pb-0.pt-0
+            div.row.justify-content-center.align-items-center
+                div.col-12.mb-3.mb-sm-0.text-center
+                    h1!= data.headline
+                div.col-12.mb-3.text-center
+                    if data.descript != '' && data.descript != undefined
+                        p.lead!= data.descript
+                each clitem in data.newslist
+                    div.col-12.col-md-6
+                        div.card.bg-light
+                            div.card-body
+                                a.h5.card-title(href=`${clitem.id}.html`)= clitem.title
+                                p.card-text= clitem.datetime
+                                p.card-text.text-dark= clitem.preface
