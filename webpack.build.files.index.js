@@ -54,6 +54,7 @@ const htmlfiles = {
         'solution_A201905'
     ],
     products: [
+        'product_USG6106',
         'product_ER3200G2',
         'product_WVR1300L',
         'product_F100CG2'
