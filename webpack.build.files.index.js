@@ -51,7 +51,8 @@ const htmlfiles = {
         'news_20190400'
     ],
     solutions: [
-        'solution_A201905'
+        'solution_A201905',
+        'solution_B201901'
     ],
     products: [
         'product_USG6106',
