@@ -118,7 +118,7 @@ footer a:hover {
 }
 
 /*-----------------------------------------------------------------------------------------
-For linklist_02
+For linklist_02/brandlink_list
 -----------------------------------------------------------------------------------------*/
 .custom-opacity-link img {
     opacity: 0.45;
@@ -128,6 +128,14 @@ For linklist_02
 .custom-opacity-link img:hover {
     opacity: 1;
     height: 5.25em;
+}
+
+.custom-brand-link {
+    opacity: 0.55;
+}
+.custom-brand-link:hover {
+    opacity: 1;
+    /* box-shadow: 0 0 0 0.2rem rgba(0, 153, 255, 0.25); */
 }
 
 /*-----------------------------------------------------------------------------------------

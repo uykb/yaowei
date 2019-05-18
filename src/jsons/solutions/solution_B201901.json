@@ -110,10 +110,126 @@
         }
     },
     {
+        "widget": "widgets/common_headline_title",
+        "data": 
+        {
+            "class": "bg-light pt-5 h3 text-center",
+            "title": "推荐产品"
+        }
+    },
+    {
+        "widget": "solutions/solution_doc_pricelist",
+        "data": 
+        [
+            {
+                "category": "云服务器",
+                "price": "￥41元/月",
+                "promotion": "性能优选",
+                "descript": "1核1G，20G数据盘",
+                "button_caption": "立即订购",
+                "button_link": "#order",
+                "feature_list": []
+            },
+            {
+                "category": "云硬盘",
+                "price": "￥36元/月",
+                "promotion": "最具性价比",
+                "descript": "100G存储空间",
+                "button_caption": "立即订购",
+                "button_link": "#order",
+                "feature_list": []
+            },
+            {
+                "category": "云负载均衡",
+                "price": "￥48元/月",
+                "promotion": "",
+                "descript": "实例免费，带宽2Mb",
+                "button_caption": "立即订购",
+                "button_link": "#order",
+                "feature_list": []
+            },
+            {
+                "category": "云安全防护",
+                "price": "￥1580元/月",
+                "promotion": "",
+                "descript": "网站高防，10Gbps",
+                "button_caption": "立即订购",
+                "button_link": "#order",
+                "feature_list": []
+            },
+            {
+                "category": "云容灾备份",
+                "price": "价格面议",
+                "promotion": "",
+                "descript": "按需计费，请联系客户经理",
+                "button_caption": "联系客户经理",
+                "button_link": "./about.html#tag_TD",
+                "feature_list": []
+            }
+        ]
+    },
+    {
+        "widget": "widgets/common_headline_title",
+        "data": 
+        {
+            "class": "bg-light pb-5 h3 text-center",
+            "title": "客户案例"
+        }
+    },
+    {
+        "widget": "widgets/common_image_carousel",
+        "data": 
+        {
+            "class": "bg-light pb-5",
+            "imagelist": 
+            [
+                "./assets/imgs/brand-1.jpg",
+                "./assets/imgs/brand-2.jpg",
+                "./assets/imgs/brand-3.jpg",
+                "./assets/imgs/brand-4.jpg",
+                "./assets/imgs/brand-5.jpg"
+            ]
+        }
+    },
+    {
+        "widget": "widgets/common_headline_title",
+        "data": 
+        {
+            "class": "h3 pt-5 text-center",
+            "title": "合作伙伴"
+        }
+    },
+    {
+        "widget": "widgets/common_brandlink_list",
+        "data": 
+        {
+            "class": "",
+            "brandlist": 
+            [
+                {
+                    "logo": "./assets/imgs/brand-6.png",
+                    "link": "http://www.info2soft.com"
+                },
+                {
+                    "logo": "./assets/imgs/brand-7.png",
+                    "link": "http://www.sangfor.com.cn"
+                },
+                {
+                    "logo": "./assets/imgs/brand-8.png",
+                    "link": "http://www.kingdee.com"
+                },
+                {
+                    "logo": "./assets/imgs/brand-9.png",
+                    "link": ""
+                }
+            ]
+        }
+    },
+    {
         "widget": "widgets/common_space",
         "data": 
         {
-            "class": "bg-light p-4"
+            "class": "pb-0 pb-lg-3"
         }
     }
 ]

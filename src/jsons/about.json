@@ -53,13 +53,17 @@
     {
         "widget": "widgets/common_image_carousel",
         "data": 
-        [
-            "./assets/imgs/header-1.jpg",
-            "./assets/imgs/header-2.jpg",
-            "./assets/imgs/header-3.jpg",
-            "./assets/imgs/header-4.jpg",
-            "./assets/imgs/header-5.jpg"
-        ]
+        {
+            "class": "",
+            "imagelist": 
+            [
+                "./assets/imgs/header-1.jpg",
+                "./assets/imgs/header-2.jpg",
+                "./assets/imgs/header-3.jpg",
+                "./assets/imgs/header-4.jpg",
+                "./assets/imgs/header-5.jpg"
+            ]
+        }
     },
     {
         "widget": "widgets/addtag",
