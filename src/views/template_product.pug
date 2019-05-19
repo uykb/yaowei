@@ -1,6 +1,7 @@
 extends template_base
 
 block header-scripts
+    link(rel="stylesheet", href="./cdn/css/flickity-fade.css")
 
 block footer-scripts
     //- Go to Top Begin
@@ -10,6 +11,8 @@ block footer-scripts
     script(src="./cdn/js/hs.go-to.js")
     //- Note: Need to add script part below the body
     //- Go to Top End
+    script(type="text/javascript", src="./cdn/js/flickity.pkgd.min.js")
+    script(type="text/javascript", src="./cdn/js/flickity-fade.js")
     script.
         $(document).ready(function() {
             $(".top-menu-item:eq(1)").addClass("active");

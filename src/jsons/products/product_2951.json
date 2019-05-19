@@ -1,0 +1,39 @@
+[
+    {
+        "widget": "widgets/common_title_dark",
+        "data": 
+        {
+            "bg_image": "./assets/imgs/products/product_doc_bg.jpg",
+            "headline": "2951集成多业务路由器",
+            "descript": "内置防火墙 / IP过滤器 / 允许限制访问Internet和其他网络资源。",
+            "bclist": 
+            [
+                {
+                    "link": "./",
+                    "caption": "首页",
+                    "active": false
+                },
+                {
+                    "link": "./product_list.html",
+                    "caption": "产品中心",
+                    "active": false
+                }
+            ]
+        }
+    },
+    {
+        "widget": "widgets/common_image_carousel_fade",
+        "data": 
+        {
+            "class": "bg-white p-0 m-0",
+            "imagelist": 
+            [
+                "./assets/imgs/products/product_WVR1300L_11.jpg",
+                "./assets/imgs/products/product_WVR1300L_12.jpg",
+                "./assets/imgs/products/product_WVR1300L_13.jpg",
+                "./assets/imgs/products/product_WVR1300L_14.jpg",
+                "./assets/imgs/products/product_WVR1300L_15.jpg"
+            ]
+        }
+    }
+]
