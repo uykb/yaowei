@@ -25,35 +25,39 @@
         "widget": "widgets/common_headline_title",
         "data": 
         {
-            "class": "bg-light pt-5 h3 text-center",
+            "class": "bg-white pt-5 h3 text-center",
             "title": "业务挑战"
         }
     },
     {
         "widget": "widgets/common_card_media_list",
         "data": 
-        [
-            {
-                "faicon": "fas fa-temperature-low fa-3x text-warning",
-                "headline": "可用带宽不足",
-                "htmlcontent": "促销、秒杀等网上销售业务场景，瞬间访问量可上升到平常的几十倍，瞬间大并发请求导致网络带宽占满、服务器负载高、响应速度慢，导致整个系统服务不可用"
-            },
-            {
-                "faicon": "fab fa-accessible-icon fa-3x text-success",
-                "headline": "区域访问限制",
-                "htmlcontent": "电商业务面向全国，不同区域用户存在跨区域、跨运营访问，并且服务请求涉及大量的静态图片，面临加载速度慢、不同区域用户网页打开慢、网络延时等问题"
-            },
-            {
-                "faicon": "fas fa-radiation-alt fa-3x text-danger",
-                "headline": "遭遇网络攻击",
-                "htmlcontent": "电商业务涉及网上交易，经常面临网页篡改、DDoS攻击、账号泄露等一系列风险"
-            },
-            {
-                "faicon": "fab fa-alipay fa-3x text-info",
-                "headline": "运维压力过大",
-                "htmlcontent": "电商业务所需资源弹性大，频繁上线设备，同时电商都是线上业务，系统的稳定性要求高，运维压力大"
-            }
-        ]
+        {
+            "class": "bg-white",
+            "medialist": 
+            [
+                {
+                    "faicon": "fas fa-temperature-low fa-3x text-warning",
+                    "headline": "可用带宽不足",
+                    "htmlcontent": "促销、秒杀等网上销售业务场景，瞬间访问量可上升到平常的几十倍，瞬间大并发请求导致网络带宽占满、服务器负载高、响应速度慢，导致整个系统服务不可用"
+                },
+                {
+                    "faicon": "fab fa-accessible-icon fa-3x text-success",
+                    "headline": "区域访问限制",
+                    "htmlcontent": "电商业务面向全国，不同区域用户存在跨区域、跨运营访问，并且服务请求涉及大量的静态图片，面临加载速度慢、不同区域用户网页打开慢、网络延时等问题"
+                },
+                {
+                    "faicon": "fas fa-radiation-alt fa-3x text-danger",
+                    "headline": "遭遇网络攻击",
+                    "htmlcontent": "电商业务涉及网上交易，经常面临网页篡改、DDoS攻击、账号泄露等一系列风险"
+                },
+                {
+                    "faicon": "fab fa-alipay fa-3x text-info",
+                    "headline": "运维压力过大",
+                    "htmlcontent": "电商业务所需资源弹性大，频繁上线设备，同时电商都是线上业务，系统的稳定性要求高，运维压力大"
+                }
+            ]
+        }
     },
     {
         "widget": "solutions/solution_doc_bgimage",
