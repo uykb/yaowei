@@ -30,6 +30,7 @@
             "image": "./assets/imgs/news/news_list_side.svg",
             "newsperpage": 3,
             "newslist": [
+                "news_20190510",
                 "news_20190509",
                 "news_20190508",
                 "news_20190507",

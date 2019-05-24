@@ -8,20 +8,20 @@
             "href": ""
         },
         {
-            "title": "亚马逊",
-            "href": "#"
-        },
-        {
-            "title": "天猫淘宝",
-            "href": "#"
+            "title": "华为",
+            "href": "https://www.huawei.com/"
         },
         {
             "title": "小米",
-            "href": "#"
+            "href": "https://www.mi.com/"
         },
         {
-            "title": "华为",
-            "href": "#"
+            "title": "天猫淘宝",
+            "href": "https://www.tmall.com/"
+        },
+        {
+            "title": "亚马逊",
+            "href": "https://www.amazon.com/"
         }
     ],
     "getintouchinfo": {

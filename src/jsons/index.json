@@ -49,6 +49,11 @@
                     "icon": "./assets/imgs/icon-3.svg",
                     "caption": "数据维护解决方案",
                     "id": ""
+                },
+                {
+                    "icon": "./assets/imgs/icon-4.svg",
+                    "caption": "更多解决方案...",
+                    "id": "solution_list"
                 }
             ]
         }
@@ -77,9 +82,9 @@
                     "text": "WVR1300L无线路由器"
                 },
                 {
-                    "id": "",
+                    "id": "product_list",
                     "image": "./assets/imgs/products/product_SG1210P_01.jpg",
-                    "text": "网关设备"
+                    "text": "更多网络产品..."
                 }
             ]
         }
@@ -121,7 +126,9 @@
         {
             "headline": "最新企业资讯",
             "descript": "连接我们，共创成功",
-            "maxitems": 4
+            "maxitems": 4,
+            "linkid": "news_list_1",
+            "linkcaption": "更多新闻..."
         }
     },
     {
