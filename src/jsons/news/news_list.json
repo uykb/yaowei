@@ -28,8 +28,9 @@
         "data": 
         {
             "image": "./assets/imgs/news/news_list_side.svg",
-            "newsperpage": 3,
+            "newsperpage": 5,
             "newslist": [
+                "news_20190602",
                 "news_20190601",
                 "news_20190511",
                 "news_20190510",
