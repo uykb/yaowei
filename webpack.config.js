@@ -31,7 +31,7 @@ module.exports = {
 				}
             },
 			chunks: 'all', // 'async',
-			minChunks: 1,
+			minChunks: 2,
 			minSize: 30000,
 			name: 'custom-common'
 		}
