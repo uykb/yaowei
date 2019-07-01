@@ -10,12 +10,12 @@ section.bg-light
                 - }
                 div.col-md-4
                     div.card.py-3.px-xl-3.shadow(class=card_bgcolor)
-                        div(class=`card-body ${text_color}`)
-                            span.h6.d-block!= pitem.category
+                        div.card-body(class=text_color)
+                            span.h6.d-block(class=text_color)!= pitem.category
                                 if pitem.promotion != ''
                                     |  
                                     span.badge.badge-warning!= pitem.promotion
-                            h1.d-block.mb-2!= pitem.price
+                            h1.d-block.mb-2(class=text_color)!= pitem.price
                             p!= pitem.descript
                             if pitem.button_caption != ''
                                 if pitem.promotion != ''
