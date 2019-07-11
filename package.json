@@ -1,6 +1,6 @@
 {
   "name": "wp-site-biz",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Webpack small business website initial project ☀️",
   "main": "webpack.config.js",
   "scripts": {
@@ -77,7 +77,7 @@
     "js-tokens": "^4.0.0",
     "jsesc": "^2.5.2",
     "json-schema-traverse": "^0.4.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "loose-envify": "^1.4.0",
     "make-dir": "^2.1.0",
     "mamacro": "^0.0.3",
@@ -138,14 +138,14 @@
     "stream-shift": "^1.0.0",
     "style-loader": "^0.23.1",
     "terser": "^3.17.0",
-    "uglifyjs-webpack-plugin": "^2.1.2",
-    "webpack-cli": "^3.3.0"
+    "uglifyjs-webpack-plugin": "^2.1.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.3.4",
     "eslint": "^5.15.3",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.2.1"
   },
   "repository": {
