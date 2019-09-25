@@ -38,6 +38,7 @@ const htmlfiles = {
     news: [
         // output news document file pattern: 'news_[id].html',
         // the item correspond to the same filename js and json file.
+        "news_20190901",
         "news_20190702",
         "news_20190701",
         "news_20190605",
