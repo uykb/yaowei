@@ -1,16 +1,16 @@
 {
   "name": "wp-site-biz",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Webpack small business website initial project ☀️",
   "main": "webpack.config.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "start": "node app.js",
     "start:nodemon": "nodemon app.js",
     "start:pm2": "pm2 start ecosystem.config.js",
     "start:win": "npx run node_modules/webpack-dev-server/bin/webpack-dev-server.js --open",
     "start:dev": "webpack-dev-server --open",
-    "watch": "webpack --watch",
-    "build": "webpack --config webpack.config.js"
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "@babel/core": "^7.3.4",
@@ -145,8 +145,8 @@
     "@babel/preset-env": "^7.3.4",
     "eslint": "^5.15.3",
     "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.9",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.2.1"
   },
   "repository": {
