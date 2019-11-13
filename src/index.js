@@ -1,6 +1,7 @@
 const topmenu = require('./jsons/topmenu.json')
 const footer = require('./jsons/footer.json')
 const content = require('./jsons/index.json')
+const index_require = require('./index_require.js')
 
 // Top menu part
 let template = require(`./views/topmenu.pug`);
@@ -14,22 +15,21 @@ for (let index in content) {
         for (let id in newslistjson) {
             if (newslistjson[id].data.newslist !== undefined) {
                 content[index].data.newslist = [];
-                for (let newsid in newslistjson[id].data.newslist) {
-                    if (newsid >= content[index].data.maxitems) break;
-                    let newscontent = require(`./jsons/news/${newslistjson[id].data.newslist[newsid]}.json`)
+                let newsforindex = require('./jsons/news/news_for_index.json');
+                for (let newsid in newsforindex) {
                     content[index].data.newslist.push(
                         {
-                            id: newslistjson[id].data.newslist[newsid],
-                            title: newscontent.title,
-                            preface: newscontent.preface,
-                            datetime: newscontent.datetime
+                            id: newsforindex[newsid].id,
+                            title: newsforindex[newsid].title,
+                            preface: newsforindex[newsid].preface,
+                            datetime: newsforindex[newsid].datetime
                         }
                     );
                 }
             }
         }
     } 
-    template = require(`./views/${content[index].widget}.pug`);
+    template = index_require(content[index].widget);
     document.write(template({data: content[index].data}));
 }
 

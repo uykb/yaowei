@@ -28,10 +28,15 @@ module.exports = {
 				vendors: {
 					priority: -10,
 					test: /[\\/]node_modules[\\/]/
-				}
+				},
+                default: {
+                    minChunks: 3,
+                    priority: -20,
+                    reuseExistingChunk: true
+                }
             },
 			chunks: 'all', // 'async',
-			minChunks: 2,
+			minChunks: 1,
 			minSize: 30000,
 			name: 'custom-common'
 		}

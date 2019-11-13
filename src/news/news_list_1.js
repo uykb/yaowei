@@ -1,5 +1,6 @@
 const topmenu = require('../jsons/topmenu.json')
 const footer = require('../jsons/footer.json')
+const news_list_require = require('./news_list_require.js')
 
 // Indicate the current page no.
 // The only one parameter which need to be changed in the files 'news_list_nn.js".
@@ -19,7 +20,7 @@ for (let id in part) {
         }
         part[id].data.current_page = CURRENT_PAGE;
     }
-    template = require(`../views/${part[id].widget}.pug`);
+    template = news_list_require(part[id].widget);
     document.write(template({data: part[id].data}));
 }
 

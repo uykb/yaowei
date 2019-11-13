@@ -86,7 +86,7 @@ module.exports = {
         // ep for htmlfiles.news_list
         for (id = 1; id <= htmlfiles.news_list_page_count; id++) {
             epString += `"news/news_list_${id}":"./src/news/news_list_${id}.js",`;
-        }/*
+        }
         // ep for htmlfiles.news
         for (id in htmlfiles.news) {
             epString += `"news/${htmlfiles.news[id]}":"./src/news/${htmlfiles.news[id]}.js",`;
@@ -98,7 +98,7 @@ module.exports = {
         // ep for htmlfiles.products
         for (id in htmlfiles.products) {
             epString += `"products/${htmlfiles.products[id]}":"./src/products/${htmlfiles.products[id]}.js",`;
-        }*/
+        }
 
         if (epString !== '') {
             epString = epString.slice(0, epString.length-1)
@@ -141,7 +141,7 @@ module.exports = {
                 title: `企业新闻 - 列表 - 第${id}页`
             });
             returnList.push(tempObj);
-        }/*
+        }
         // HtmlWebpackPlugin for htmlfiles.news
         let content = '';
         for (id in htmlfiles.news) {
@@ -191,7 +191,7 @@ module.exports = {
                 title: '产品中心 - 详情页'
             });
             returnList.push(tempObj);
-        }*/
+        }
 
         return returnList
     }
