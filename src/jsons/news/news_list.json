@@ -29,6 +29,7 @@
         {
             "image": "./assets/imgs/news/news_list_side.svg",
             "newsperpage": 5,
+            "jspagecount": 5,
             "newslist": [
                 "news_20191101",
                 "news_20190901",

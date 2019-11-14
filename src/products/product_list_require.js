@@ -1,4 +1,4 @@
-module.exports = function (name) {
+module.exports = function(name) {
     // switch...case... for pug template file.
     //   Intending to optimise webpack output files size.
     //   Because webpack will pack all files of the source folder 

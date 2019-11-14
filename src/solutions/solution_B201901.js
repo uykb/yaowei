@@ -1,19 +1,4 @@
-const topmenu = require('../jsons/topmenu.json')
-const footer = require('../jsons/footer.json')
+const solution_base = require('./solution_base.js')
 
-const SOLUTION_ID = 'solution_B201901'; // The same value as the filename without extension.
-
-// Top menu part
-let template = require(`../views/topmenu.pug`);
-document.write(template({data: topmenu}));
-
-// Content part
-let part = require(`../jsons/solutions/${SOLUTION_ID}.json`);
-for (let id in part) {
-    template = require(`../views/${part[id].widget}.pug`);
-    document.write(template({data: part[id].data}));
-}
-
-// Footer part
-template = require(`../views/footer.pug`);
-document.write(template({data: footer}));
+// Indicate to the solution json file
+solution_base(require('../jsons/solutions/solution_B201901.json'));

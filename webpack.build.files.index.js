@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-// The List of html files that need to be generated.
+// The List of index html files that need to be generated.
 const htmlfiles = {
     index: [
         {
@@ -33,46 +33,85 @@ const htmlfiles = {
             output: 'all_widgets.html',
             title: '☀️网页小部件展示☀️'
         }
-    ],
-    news_list_page_count: 5,    // the amount pages of news list.
-    news: [
-        // output news document file pattern: 'news_[id].html',
-        // the item correspond to the same filename js and json file.
-        "news_20191101",
-        "news_20190901",
-        "news_20190702",
-        "news_20190701",
-        "news_20190605",
-        "news_20190604",
-        "news_20190603",
-        "news_20190602",
-        "news_20190601",
-        "news_20190511",
-        "news_20190510",
-        "news_20190509",
-        "news_20190508",
-        "news_20190507",
-        "news_20190506",
-        "news_20190505",
-        "news_20190504",
-        "news_20190503",
-        "news_20190502",
-        "news_20190501",
-        "news_20190500",
-        "news_20190401",
-        "news_20190400"
-],
-    solutions: [
-        'solution_A201905',
-        'solution_B201901'
-    ],
-    products: [
-        'product_2951',
-        'product_USG6106',
-        'product_ER3200G2',
-        'product_WVR1300L',
-        'product_F100CG2'
     ]
+}
+
+// Get amount pages of news list
+function get_news_list_page_count() {
+    try {
+        news_summary_json = require('./src/jsons/news/news_list_summary.json')
+        if (news_summary_json.maxpagecount > news_summary_json.limitedpagecount)
+            return news_summary_json.limitedpagecount
+        else
+            return news_summary_json.maxpagecount
+    }
+    catch(e) {
+        return 0
+    }
+}
+
+// Get news list
+function get_news_list() {
+    try {
+        news_list_json = require('./src/jsons/news/news_list.json')
+        for (let id in news_list_json) {
+            if (news_list_json[id].data.newslist !== undefined) {
+                return news_list_json[id].data.newslist
+            }
+        }
+    }
+    catch(e) {
+        return []
+    }
+}
+
+// Get solutions list
+function get_solutions_list() {
+    var rlist = [];
+
+    try {
+        solutions_json = require('./src/jsons/solutions/solution_list.json')
+        for (let id in solutions_json) {
+            if (solutions_json[id].data.id !== undefined && 
+                solutions_json[id].data.id !== '') {
+                rlist.push(solutions_json[id].data.id);
+            }
+        }
+    }
+    catch(e) {
+        console.log(e)
+    }
+
+    return rlist
+}
+
+// Get products list
+function get_products_list() {
+    var rlist = [];
+
+    try {
+        prodcucts_json = require('./src/jsons/products/product_list.json')
+        for (let id in prodcucts_json) {
+            if (prodcucts_json[id].data.id !== undefined && 
+                prodcucts_json[id].data.id !== '') {
+                rlist.push(prodcucts_json[id].data.id);
+            }
+            // If 'data' is an array...
+            if (prodcucts_json[id].data instanceof Array) {
+                for (let aid in prodcucts_json[id].data) {
+                    if (prodcucts_json[id].data[aid].id !== undefined && 
+                        prodcucts_json[id].data[aid].id !== '') {
+                        rlist.push(prodcucts_json[id].data[aid].id);
+                    }
+                }
+            }
+        }
+    }
+    catch(e) {
+        console.log(e)
+    }
+
+    return rlist
 }
 
 module.exports = {
@@ -83,22 +122,26 @@ module.exports = {
         for (var id in htmlfiles.index) {
             epString += `"${htmlfiles.index[id].entrypoint_id}":"./src/${htmlfiles.index[id].entrypoint_id}.js",`;
         }
-        // ep for htmlfiles.news_list
-        for (id = 1; id <= htmlfiles.news_list_page_count; id++) {
+        // ep for news_list_page_count
+        var news_list_page_count = get_news_list_page_count();
+        for (id = 1; id <= news_list_page_count; id++) {
             epString += `"news/news_list_${id}":"./src/news/news_list_${id}.js",`;
-        }/*
-        // ep for htmlfiles.news
-        for (id in htmlfiles.news) {
-            epString += `"news/${htmlfiles.news[id]}":"./src/news/${htmlfiles.news[id]}.js",`;
         }
-        // ep for htmlfiles.solutions
-        for (id in htmlfiles.solutions) {
-            epString += `"solutions/${htmlfiles.solutions[id]}":"./src/solutions/${htmlfiles.solutions[id]}.js",`;
+        // ep for news_list
+        var news_list = get_news_list();
+        for (id in news_list) {
+            epString += `"news/${news_list[id]}":"./src/news/${news_list[id]}.js",`;
         }
-        // ep for htmlfiles.products
-        for (id in htmlfiles.products) {
-            epString += `"products/${htmlfiles.products[id]}":"./src/products/${htmlfiles.products[id]}.js",`;
-        }*/
+        // ep for solutions_list
+        var solutions_list = get_solutions_list();
+        for (id in solutions_list) {
+            epString += `"solutions/${solutions_list[id]}":"./src/solutions/${solutions_list[id]}.js",`;
+        }
+        // ep for products_list
+        var products_list = get_products_list();
+        for (id in products_list) {
+            epString += `"products/${products_list[id]}":"./src/products/${products_list[id]}.js",`;
+        }
 
         if (epString !== '') {
             epString = epString.slice(0, epString.length-1)
@@ -127,7 +170,8 @@ module.exports = {
             returnList.push(tempObj);
         }
         // HtmlWebpackPlugin for htmlfiles.news_list (Multi-pages)
-        for (id = 1; id <= htmlfiles.news_list_page_count; id++) {
+        var news_list_page_count = get_news_list_page_count()
+        for (id = 1; id <= news_list_page_count; id++) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
                     `news/news_list_${id}`,
@@ -141,18 +185,19 @@ module.exports = {
                 title: `企业新闻 - 列表 - 第${id}页`
             });
             returnList.push(tempObj);
-        }/*
-        // HtmlWebpackPlugin for htmlfiles.news
+        }
+        // HtmlWebpackPlugin for news_list
         let content = '';
-        for (id in htmlfiles.news) {
-            content = require(`./src/jsons/news/${htmlfiles.news[id]}.json`);
+        var news_list = get_news_list();
+        for (id in news_list) {
+            content = require(`./src/jsons/news/${news_list[id]}.json`);
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                    `news/${htmlfiles.news[id]}`,
+                    `news/${news_list[id]}`,
                     'custom-common'
                 ],
                 favicon: './src/favicon.ico',
-                filename: `${htmlfiles.news[id]}.html`,
+                filename: `${news_list[id]}.html`,
                 inject: 'body',
                 minify: true,
                 template: './src/views/template_news.pug',
@@ -160,15 +205,16 @@ module.exports = {
             });
             returnList.push(tempObj);
         }
-        // HtmlWebpackPlugin for htmlfiles.solutions
-        for (id in htmlfiles.solutions) {
+        // HtmlWebpackPlugin for solutions_list
+        var solutions_list = get_solutions_list();
+        for (id in solutions_list) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                    `solutions/${htmlfiles.solutions[id]}`,
+                    `solutions/${solutions_list[id]}`,
                     'custom-common'
                 ],
                 favicon: './src/favicon.ico',
-                filename: `${htmlfiles.solutions[id]}.html`,
+                filename: `${solutions_list[id]}.html`,
                 inject: 'body',
                 minify: true,
                 template: './src/views/template_solution.pug',
@@ -176,22 +222,23 @@ module.exports = {
             });
             returnList.push(tempObj);
         }
-        // HtmlWebpackPlugin for htmlfiles.products
-        for (id in htmlfiles.products) {
+        // HtmlWebpackPlugin for products_list
+        var products_list = get_products_list();
+        for (id in products_list) {
             tempObj = new HtmlWebpackPlugin({
                 chunks: [
-                    `products/${htmlfiles.products[id]}`,
+                    `products/${products_list[id]}`,
                     'custom-common'
                 ],
                 favicon: './src/favicon.ico',
-                filename: `${htmlfiles.products[id]}.html`,
+                filename: `${products_list[id]}.html`,
                 inject: 'body',
                 minify: true,
                 template: './src/views/template_product.pug',
                 title: '产品中心 - 详情页'
             });
             returnList.push(tempObj);
-        }*/
+        }
 
         return returnList
     }
