@@ -9,6 +9,4 @@ Webpack中小企业静态网站示例项目。
 
 ***
 
-## SUPPORT HUAWEI!:cn:
-
-SAY **NO** TO US BAN.
+# :cn: **SUPPORT HUAWEI!** :cn:
