@@ -1,6 +1,6 @@
 {
-    "limitedpagecount": 5,
+    "maxpagecount": 5,
     "newsperpage": 5,
     "newscount": 23,
-    "maxpagecount": 5
+    "limitedpagecount": 5
 }

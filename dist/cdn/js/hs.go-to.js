@@ -90,7 +90,7 @@
 
           $('html, body').stop().animate({
             'scrollTop': targetOffsetTop()
-          }, 800);
+          }, 300);
         });
 
         if (!$this.data('offset-top') && !$this.hasClass('js-animation-was-fired') && type != 'static') {
