@@ -90,43 +90,12 @@
         }
     },
     {
-        "widget": "widgets/common_crew_list_02",
-        "data": 
-        {
-            "headline": "值得信赖的服务团队",
-            "descript": "热忱、耐心、专业、敬业",
-            "crewlist":
-            [
-                {
-                    "title":"产品方案技术咨询",
-                    "image": "./assets/imgs/avatar-4.jpg",
-                    "name": "王文军"
-                },
-                {
-                    "title":"行业大客户支持",
-                    "image": "./assets/imgs/avatar-5.jpg",
-                    "name": "左小月"
-                },
-                {
-                    "title":"售后服务",
-                    "image": "./assets/imgs/avatar-6.jpg",
-                    "name": "刘雯"
-                },
-                {
-                    "title":"销售代理咨询",
-                    "image": "./assets/imgs/avatar-3.jpg",
-                    "name": "乔恩"
-                }
-            ]
-        }
-    },
-    {
         "widget": "news/news_autolist",
         "data": 
         {
             "headline": "最新企业资讯",
             "descript": "连接我们，共创成功",
-            "maxitems": 4,
+            "maxitems": 2,
             "linkid": "news_list_1",
             "linkcaption": "更多新闻..."
         }
