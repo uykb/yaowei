@@ -5,7 +5,7 @@
         {
             "bg_image": "./assets/imgs/header-3.jpg",
             "headline": "我们的使命",
-            "descript": "专注于网络信息安全前沿技术，致力于为企业网络信息安全保护保驾护航",
+            "descript": "为天下健康食品做好包装",
             "button_caption": "",
             "button_link": "",
             "bclist": 
@@ -35,12 +35,12 @@
         "data": 
         {
             "class": "pt-3 pb-3 pt-lg-4 pb-lg-4",
-            "title": "ABC企业简介"
+            "title": "广州耀威包装有限公司"
         }
     },
     {
         "widget": "widgets/common_text_paragraph",
-        "data": "<p>ABC网络技术有限公司于2015年正式成立，创始人来自于互联网前沿企业。ABC是中国领先的网络安全、大数据与安全云服务提供商。2017年，ABC完成美国NASDAQ上市（股票代码：ABCC）。</p><blockquote class='text-center'><span class='h4 d-block text-danger'>“技术为本、持续创新、服务至上”</span><span>— ABC企业宗旨</span></blockquote><p>ABC参与建设了多个国家信息安全级别重点项目，在国家多个重要行业信息系统或项目建设中成为主力军，并不断践行维护国家网络空间安全、为数字经济发展保驾护航的使命与责任。</p>"
+        "data": "<p>广州耀威塑胶有限公司 (以下简称”广州耀威”)成立于 2014 年，位于广州市白云区太和镇，专注于PET，PE,PP 材质的各种塑料产品研发及生产为一体的综合性塑料包装企业</p><blockquote class='text-center'><span class='h4 d-block text-danger'>“专注研发，创新包装，引领市场”</span><span>—广州耀威包装有限公司宗旨</span></blockquote><p>技精而思远，耀威将继续以客户为中心，紧跟市场脉络，不断研发创新，为客户包装创造价值。</p>"
     },
     {
         "widget": "widgets/common_headline_title",
@@ -109,56 +109,6 @@
     {
         "widget": "widgets/addtag",
         "data": "tag_TD"
-    },
-    {
-        "widget": "widgets/common_headline_title",
-        "data": 
-        {
-            "class": "pt-3 pb-3 pt-lg-4 pb-lg-4",
-            "title": "我们的团队"
-        }
-    },
-    {
-        "widget": "widgets/common_crew_list_01",
-        "data": 
-        [
-            {
-                "title":"产品方案咨询",
-                "image": "./assets/imgs/avatar-4.jpg",
-                "name": "王文军",
-                "htmlinfolist":
-                [
-                    "邮箱： <a href='mailto:wangwj@abc-china.cn'>wangwj@abc-china.cn</a>",
-                    "电话： 13498945300",
-                    "QQ： 3999039888",
-                    "微信： wwj-abc-china"
-                ]
-            },
-            {
-                "title":"行业大客户支持",
-                "image": "./assets/imgs/avatar-5.jpg",
-                "name": "左小月",
-                "htmlinfolist":
-                [
-                    "邮箱： <a href='mailto:zxyabc@abc-china.cn'>zxyabc@abc-china.cn</a>",
-                    "电话： 13922111333",
-                    "QQ： 9998383001",
-                    "微信： zuoxiaoyue_abc"
-                ]
-            },
-            {
-                "title":"售后服务",
-                "image": "./assets/imgs/avatar-6.jpg",
-                "name": "刘雯",
-                "htmlinfolist":
-                [
-                    "邮箱： <a href='mailto:liuwen@abc-china.cn'>liuwen@abc-china.cn</a>",
-                    "电话： 13853147733",
-                    "QQ： 4590139111",
-                    "微信： lw-abc"
-                ]
-            }
-        ]
     },
     {
         "widget": "widgets/common_space",
