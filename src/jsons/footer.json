@@ -1,27 +1,19 @@
 {
     "footersitelogo": "./assets/imgs/favicon.png",
-    "footersitename": "企业测试网站",
-    "copyright": "Copyright © 2019 版权所有。Inspired and Powered by <a href=\"https://insight.mediumra.re/index.html\" target=\"_blank\">Insight</a> <a href=\"all_widgets.html\">widgets</a>.",
+    "footersitename": "广州耀威包装有限公司",
+    "copyright": "Copyright © 2023 版权所有。Inspired and Powered by <a href=\"https://insight.mediumra.re/index.html\" target=\"_blank\">Insight</a> <a href=\"all_widgets.html\">widgets</a>.",
     "links": [
         {
             "title": "友情链接",
             "href": ""
         },
         {
-            "title": "华为",
-            "href": "https://www.huawei.com/"
+            "title": "阿里国际站",
+            "href": "https://yaoweipackage.en.alibaba.com/"
         },
         {
-            "title": "小米",
-            "href": "https://www.mi.com/"
-        },
-        {
-            "title": "天猫淘宝",
-            "href": "https://www.tmall.com/"
-        },
-        {
-            "title": "亚马逊",
-            "href": "https://www.amazon.com/"
+            "title": "阿里国际站",
+            "href": "https://yaoweipackage.en.alibaba.com/"
         }
     ],
     "getintouchinfo": {
@@ -44,7 +36,7 @@
             },
             {
                 "faicon": "fas fa-envelope",
-                "href": "mailto:xxx@yyy.com",
+                "href": "mailto:admin@diyvv.com",
                 "ref": "电子邮件"
             }
         ]
