@@ -106,36 +106,6 @@
             }
         ]
     },
-        {
-        "widget": "widgets/linklist_01",
-        "data": 
-        [
-            {
-                "icon": "fab fa-weixin fa-3x",
-                "info": "微信公众号",
-                "moreinfo": "搜索：ABCFansGroup",
-                "link": "/"
-            },
-            {
-                "icon": "fab fa-weibo fa-3x",
-                "info": "微博大咖号",
-                "moreinfo": "搜索：ABCFansCode",
-                "link": "/"
-            },
-            {
-                "icon": "fab fa-qq fa-3x",
-                "info": "QQ粉丝群",
-                "moreinfo": "搜索：ABCFans",
-                "link": "/"
-            },
-            {
-                "icon": "fas fa-phone-square fa-3x",
-                "info": "拨打 400-123-1234",
-                "moreinfo": "服务时间：朝9点 至 晚5点",
-                "link": "/"
-            }
-        ]
-    },
     {
         "widget": "widgets/addtag",
         "data": "tag_TD"
