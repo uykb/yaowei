@@ -7,25 +7,25 @@ const htmlfiles = {
             entrypoint_id: 'index',
             template: './src/views/template_index.pug',
             output: 'index.html',
-            title: '首页-广州耀威包装有限公司'
+            title: '广州耀威包装有限公司-首页'
         },
         {
             entrypoint_id: 'about',
             template: './src/views/template_about.pug',
             output: 'about.html',
-            title: '关于-广州耀威包装有限公司'
+            title: '广州耀威包装有限公司-关于'
         },
         {
             entrypoint_id: 'solutions/solution_list',
             template: './src/views/template_solution.pug',
             output: 'solution_list.html',
-            title: '解决-广州耀威包装有限公司'
+            title: '广州耀威包装有限公司-解决方案'
         },
         {
             entrypoint_id: 'products/product_list',
             template: './src/views/template_product.pug',
             output: 'product_list.html',
-            title: '产品中心-广州耀威包装有限公司'
+            title: '广州耀威包装有限公司-产品中心'
         },
         {
             entrypoint_id: 'all_widgets',
