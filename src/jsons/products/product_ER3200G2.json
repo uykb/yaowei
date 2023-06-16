@@ -36,6 +36,11 @@
                 "./assets/imgs/products/product_ER3200G2_09.jpg",
                 "./assets/imgs/products/product_ER3200G2_10.jpg"
             ]
+             "video controls": 
+            [
+                "./assets/video/video.mp4"
+            ]
+
         }
     }
 ]
